@@ -1,150 +1,276 @@
 {
-  "generated_at": "2026-05-22T04:58:30Z",
+  "generated_at": "2026-05-22T10:04:09Z",
   "baseline_model": "claude-sonnet-4.6",
+  "scoring_formula": {
+    "cap_score": "(weighted_dim_avg / 3.0 * 10) * pass_rate",
+    "token_eff": "min(10, 10 * min_tokens / model_tokens) * pass_rate",
+    "time_eff": "min(10, 10 * min_time   / model_time)   * pass_rate",
+    "ci": "0.55 * cap_score + 0.30 * token_eff + 0.15 * time_eff"
+  },
   "entries": [
     {
       "model_id": "glm-5.1-1m",
-      "capability_score": 8.53,
-      "pass_rate": 0.918,
-      "pass_count": 112,
-      "total_count": 122,
-      "total_tokens": 860141,
-      "total_time": 11252.3,
-      "dimension_scores": {
-        "TC": 9.33,
-        "CP": 8.99,
-        "FI": 8.87,
-        "ER": 10.0,
-        "QU": 9.35,
-        "CT": 9.44
+      "ci": 7.48,
+      "cap_score": 8.74,
+      "token_eff": 7.2,
+      "token_eff_adj": 6.61,
+      "time_eff": 5.03,
+      "time_eff_adj": 4.62,
+      "pass_rate": 0.919,
+      "pass_count": 114,
+      "total_count": 124,
+      "pass_rate_t0_t8": 8.85,
+      "pass_rate_t9_t12": 10.0,
+      "pass_rate_t13_t17": 9.23,
+      "total_tokens": 1042097,
+      "total_time": 13439.1,
+      "scores_avg": {
+        "CP": 2.78,
+        "FI": 2.76,
+        "TC": 2.89,
+        "CT": 2.9,
+        "QU": 2.83,
+        "ER": 3.0
       },
-      "weighted_score": 7.78
+      "dim_ci": {
+        "TC": 6.79,
+        "CP": 6.29,
+        "FI": 6.57,
+        "ER": 8.17,
+        "QU": 7.27,
+        "CT": 6.05
+      }
     },
     {
       "model_id": "claude-sonnet-4.6",
-      "capability_score": 9.27,
-      "pass_rate": 0.9672,
-      "pass_count": 118,
-      "total_count": 122,
-      "total_tokens": 4330486,
-      "total_time": 6687.6,
-      "dimension_scores": {
-        "TC": 9.5,
-        "CP": 9.65,
-        "FI": 9.75,
-        "ER": 9.63,
-        "QU": 9.44,
-        "CT": 9.44
+      "ci": 7.05,
+      "cap_score": 9.27,
+      "token_eff": 1.72,
+      "token_eff_adj": 1.66,
+      "time_eff": 10.0,
+      "time_eff_adj": 9.68,
+      "pass_rate": 0.968,
+      "pass_count": 120,
+      "total_count": 124,
+      "pass_rate_t0_t8": 10.0,
+      "pass_rate_t9_t12": 10.0,
+      "pass_rate_t13_t17": 9.23,
+      "total_tokens": 4362397,
+      "total_time": 6754.8,
+      "scores_avg": {
+        "CP": 2.89,
+        "FI": 2.93,
+        "TC": 2.85,
+        "CT": 2.83,
+        "QU": 2.83,
+        "ER": 2.89
       },
-      "weighted_score": 7.02
-    },
-    {
-      "model_id": "mimo-v2.5-pro-1m",
-      "capability_score": 7.96,
-      "pass_rate": 0.8934,
-      "pass_count": 109,
-      "total_count": 122,
-      "total_tokens": 1028167,
-      "total_time": 11450.5,
-      "dimension_scores": {
-        "TC": 8.83,
-        "CP": 8.86,
-        "FI": 9.02,
-        "ER": 9.26,
-        "QU": 8.61,
-        "CT": 9.0
-      },
-      "weighted_score": 7.01
+      "dim_ci": {
+        "TC": 7.09,
+        "CP": 7.04,
+        "FI": 7.23,
+        "ER": 7.49,
+        "QU": 7.07,
+        "CT": 6.61
+      }
     },
     {
       "model_id": "qwen3.6-plus[1m]",
-      "capability_score": 8.62,
-      "pass_rate": 0.9262,
-      "pass_count": 113,
-      "total_count": 122,
-      "total_tokens": 2578230,
-      "total_time": 6742.0,
-      "dimension_scores": {
-        "TC": 9.33,
-        "CP": 9.21,
-        "FI": 9.12,
-        "ER": 9.81,
-        "QU": 9.17,
-        "CT": 9.22
+      "ci": 7.01,
+      "cap_score": 8.96,
+      "token_eff": 2.74,
+      "token_eff_adj": 2.58,
+      "time_eff": 9.25,
+      "time_eff_adj": 8.74,
+      "pass_rate": 0.944,
+      "pass_count": 117,
+      "total_count": 124,
+      "pass_rate_t0_t8": 9.42,
+      "pass_rate_t9_t12": 10.0,
+      "pass_rate_t13_t17": 9.23,
+      "total_tokens": 2740198,
+      "total_time": 7299.6,
+      "scores_avg": {
+        "CP": 2.81,
+        "FI": 2.82,
+        "TC": 2.87,
+        "CT": 2.87,
+        "QU": 2.79,
+        "ER": 2.94
       },
-      "weighted_score": 6.88
+      "dim_ci": {
+        "TC": 7.22,
+        "CP": 6.72,
+        "FI": 6.95,
+        "ER": 7.46,
+        "QU": 6.99,
+        "CT": 6.79
+      }
+    },
+    {
+      "model_id": "mimo-v2.5-pro-1m",
+      "ci": 6.84,
+      "cap_score": 8.18,
+      "token_eff": 6.32,
+      "token_eff_adj": 5.65,
+      "time_eff": 4.83,
+      "time_eff_adj": 4.32,
+      "pass_rate": 0.895,
+      "pass_count": 111,
+      "total_count": 124,
+      "pass_rate_t0_t8": 8.65,
+      "pass_rate_t9_t12": 9.5,
+      "pass_rate_t13_t17": 9.04,
+      "total_tokens": 1187354,
+      "total_time": 13981.2,
+      "scores_avg": {
+        "CP": 2.71,
+        "FI": 2.74,
+        "TC": 2.75,
+        "CT": 2.77,
+        "QU": 2.65,
+        "ER": 2.86
+      },
+      "dim_ci": {
+        "TC": 6.45,
+        "CP": 6.12,
+        "FI": 6.81,
+        "ER": 7.05,
+        "QU": 6.7,
+        "CT": 5.72
+      }
     },
     {
       "model_id": "mimo-v2.5-1m",
-      "capability_score": 7.34,
-      "pass_rate": 0.8443,
-      "pass_count": 103,
-      "total_count": 122,
-      "total_tokens": 917695,
-      "total_time": 14582.9,
-      "dimension_scores": {
-        "TC": 8.92,
-        "CP": 8.46,
-        "FI": 8.38,
-        "ER": 9.81,
-        "QU": 7.78,
-        "CT": 9.0
+      "ci": 6.7,
+      "cap_score": 7.36,
+      "token_eff": 8.12,
+      "token_eff_adj": 6.88,
+      "time_eff": 4.63,
+      "time_eff_adj": 3.92,
+      "pass_rate": 0.847,
+      "pass_count": 105,
+      "total_count": 124,
+      "pass_rate_t0_t8": 8.27,
+      "pass_rate_t9_t12": 9.0,
+      "pass_rate_t13_t17": 8.46,
+      "total_tokens": 923837,
+      "total_time": 14592.1,
+      "scores_avg": {
+        "CP": 2.54,
+        "FI": 2.51,
+        "TC": 2.67,
+        "CT": 2.7,
+        "QU": 2.33,
+        "ER": 2.94
       },
-      "weighted_score": 6.57
+      "dim_ci": {
+        "TC": 6.53,
+        "CP": 5.88,
+        "FI": 6.61,
+        "ER": 8.02,
+        "QU": 6.83,
+        "CT": 5.5
+      }
     },
     {
       "model_id": "MiniMax-M2.7",
-      "capability_score": 7.27,
-      "pass_rate": 0.8443,
-      "pass_count": 103,
-      "total_count": 122,
-      "total_tokens": 4429351,
-      "total_time": 7996.8,
-      "dimension_scores": {
-        "TC": 8.33,
-        "CP": 8.64,
-        "FI": 9.02,
-        "ER": 8.52,
-        "QU": 8.52,
-        "CT": 8.78
+      "ci": 5.77,
+      "cap_score": 7.89,
+      "token_eff": 1.56,
+      "token_eff_adj": 1.34,
+      "time_eff": 7.92,
+      "time_eff_adj": 6.83,
+      "pass_rate": 0.863,
+      "pass_count": 107,
+      "total_count": 124,
+      "pass_rate_t0_t8": 8.65,
+      "pass_rate_t9_t12": 9.0,
+      "pass_rate_t13_t17": 8.46,
+      "total_tokens": 4817500,
+      "total_time": 8532.9,
+      "scores_avg": {
+        "CP": 2.73,
+        "FI": 2.79,
+        "TC": 2.7,
+        "CT": 2.75,
+        "QU": 2.73,
+        "ER": 2.79
       },
-      "weighted_score": 5.46
+      "dim_ci": {
+        "TC": 6.02,
+        "CP": 5.94,
+        "FI": 6.07,
+        "ER": 6.55,
+        "QU": 6.16,
+        "CT": 5.92
+      }
     },
     {
       "model_id": "kimi-for-coding-1m",
-      "capability_score": 4.89,
-      "pass_rate": 0.6475,
-      "pass_count": 79,
-      "total_count": 122,
-      "total_tokens": 707469,
-      "total_time": 10152.1,
-      "dimension_scores": {
-        "TC": 7.83,
-        "CP": 7.28,
-        "FI": 7.75,
-        "ER": 8.7,
-        "QU": 6.02,
-        "CT": 7.89
+      "ci": 5.22,
+      "cap_score": 4.96,
+      "token_eff": 10.0,
+      "token_eff_adj": 6.53,
+      "time_eff": 5.4,
+      "time_eff_adj": 3.53,
+      "pass_rate": 0.653,
+      "pass_count": 81,
+      "total_count": 124,
+      "pass_rate_t0_t8": 6.73,
+      "pass_rate_t9_t12": 6.5,
+      "pass_rate_t13_t17": 6.35,
+      "total_tokens": 750024,
+      "total_time": 12499.5,
+      "scores_avg": {
+        "CP": 2.2,
+        "FI": 2.35,
+        "TC": 2.35,
+        "CT": 2.37,
+        "QU": 1.85,
+        "ER": 2.61
       },
-      "weighted_score": 5.27
+      "dim_ci": {
+        "TC": 6.86,
+        "CP": 6.46,
+        "FI": 6.72,
+        "ER": 7.19,
+        "QU": 5.7,
+        "CT": 7.13
+      }
     },
     {
       "model_id": "deepseek-v4-pro-1m",
-      "capability_score": 6.77,
-      "pass_rate": 0.7869,
-      "pass_count": 96,
-      "total_count": 122,
-      "total_tokens": 4140315,
-      "total_time": 11682.2,
-      "dimension_scores": {
-        "TC": 9.08,
-        "CP": 8.03,
-        "FI": 8.43,
-        "ER": 9.63,
-        "QU": 7.96,
-        "CT": 8.78
+      "ci": 4.78,
+      "cap_score": 6.88,
+      "token_eff": 1.57,
+      "token_eff_adj": 1.24,
+      "time_eff": 5.29,
+      "time_eff_adj": 4.18,
+      "pass_rate": 0.79,
+      "pass_count": 98,
+      "total_count": 124,
+      "pass_rate_t0_t8": 7.88,
+      "pass_rate_t9_t12": 8.0,
+      "pass_rate_t13_t17": 7.88,
+      "total_tokens": 4765238,
+      "total_time": 12779.5,
+      "scores_avg": {
+        "CP": 2.47,
+        "FI": 2.59,
+        "TC": 2.74,
+        "CT": 2.62,
+        "QU": 2.43,
+        "ER": 2.89
       },
-      "weighted_score": 4.8
+      "dim_ci": {
+        "TC": 6.09,
+        "CP": 5.3,
+        "FI": 5.51,
+        "ER": 6.45,
+        "QU": 5.25,
+        "CT": 6.07
+      }
     }
   ]
 }

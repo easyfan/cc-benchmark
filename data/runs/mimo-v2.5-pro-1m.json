@@ -1,1836 +1,2238 @@
 {
   "model_id": "mimo-v2.5-pro-1m",
-  "generated_at": "2026-05-22T04:58:30Z",
+  "generated_at": "2026-05-22T10:04:09Z",
   "tasks": [
+    {
+      "task_name": "T0_5_E_skill_review_trigger",
+      "phase": "T0",
+      "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
+      "tokens_total": 686,
+      "time_sec": 3.56,
+      "tool_call_count": 2,
+      "finish_reason": "end_turn",
+      "unstable": false
+    },
+    {
+      "task_name": "T0_5_F_skill_test_trigger",
+      "phase": "T0",
+      "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
+      "tokens_total": 681,
+      "time_sec": 4.07,
+      "tool_call_count": 2,
+      "finish_reason": "end_turn",
+      "unstable": false
+    },
     {
       "task_name": "T0_A_single_tool",
       "phase": "T0",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": 3.0,
+        "CT": -1,
+        "FI": -1,
+        "TC": 3.0,
+        "QU": -1
+      },
       "tokens_total": 13841,
       "time_sec": 6.2,
-      "scores": {
-        "TC": 3.0,
-        "CP": -1,
-        "FI": -1,
-        "ER": 3.0,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 2,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T0_B_chain_tools",
       "phase": "T0",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": 3.0,
+        "CT": -1,
+        "FI": -1,
+        "TC": 3.0,
+        "QU": -1
+      },
       "tokens_total": 1223,
       "time_sec": 12.44,
-      "scores": {
-        "TC": 3.0,
-        "CP": -1,
-        "FI": -1,
-        "ER": 3.0,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 4,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T0_C_error_handling",
       "phase": "T0",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": 3.0,
+        "CT": -1,
+        "FI": -1,
+        "TC": 3.0,
+        "QU": -1
+      },
       "tokens_total": 424,
       "time_sec": 4.71,
-      "scores": {
-        "TC": 3.0,
-        "CP": -1,
-        "FI": -1,
-        "ER": 3.0,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 2,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T0_D_instruction_boundaries",
       "phase": "T0",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": 3.0,
+        "TC": 3.0,
+        "QU": -1
+      },
       "tokens_total": 594,
       "time_sec": 4.85,
-      "scores": {
-        "TC": 3.0,
-        "CP": -1,
-        "FI": 3.0,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 2,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T0_E_sequential_execution",
       "phase": "T0",
       "result": "pass",
+      "scores": {
+        "CP": 3.0,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": 3.0,
+        "QU": -1
+      },
       "tokens_total": 1099,
       "time_sec": 7.97,
-      "scores": {
-        "TC": 3.0,
-        "CP": 3.0,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 4,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T0_F_tool_retry_recovery",
       "phase": "T0",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": 2.5,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 1006,
       "time_sec": 8.99,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": 2.5,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 3,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T0_G_noise_robustness",
       "phase": "T0",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": 3.0,
+        "CT": -1,
+        "FI": 3.0,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 477,
       "time_sec": 3.97,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": 3.0,
-        "ER": 3.0,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 2,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T10_A_s1_findings_format",
       "phase": "T10",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 39774,
       "time_sec": 24.28,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T10_B_challenger_verdicts",
       "phase": "T10",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 9554,
       "time_sec": 36.88,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 9,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T10_C_news_learner_format",
       "phase": "T10",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2559,
       "time_sec": 21.41,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T10_D_stage_gate_protocol",
       "phase": "T10",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2607,
       "time_sec": 14.94,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T10_E_looper_result_format",
       "phase": "T10",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": 3.0,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 1934,
       "time_sec": 6.18,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": 3.0,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T11_A_full_publish_sequence",
       "phase": "T11",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2752,
       "time_sec": 21.56,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 2,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T11_B_pattern_pipeline",
       "phase": "T11",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2160,
       "time_sec": 12.25,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T11_C_resume_from_stage",
       "phase": "T11",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2123,
       "time_sec": 11.35,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T11_D_news_digest_handoff",
       "phase": "T11",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2061,
       "time_sec": 9.07,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T12_A_shrinker_proposal_mode",
       "phase": "T12",
       "result": "fail",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 3299,
       "time_sec": 19.97,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 2,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T12_B_patterns_patch_flag",
       "phase": "T12",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 1842,
       "time_sec": 6.8,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 0,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T12_C_readme_multilang",
       "phase": "T12",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2069,
       "time_sec": 8.92,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T12_D_no_meta_tool_for_generic",
       "phase": "T12",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2164,
       "time_sec": 11.48,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T12_E_permission_boundary_proposals",
       "phase": "T12",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2986,
       "time_sec": 15.88,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 2,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T13_A_stage1_findings",
       "phase": "T13",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 58511,
       "time_sec": 408.71,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 51,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T13_A_stage2_challenger",
       "phase": "T13",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 34569,
       "time_sec": 319.85,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 40,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T13_B_stage1_findings",
       "phase": "T13",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 3790,
       "time_sec": 81.44,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 0,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T13_B_stage2_challenger",
       "phase": "T13",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 43094,
       "time_sec": 329.04,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 39,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T13_C_interface_drift",
       "phase": "T13",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 3187,
       "time_sec": 56.97,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 0,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T13_D_frontmatter_trap",
       "phase": "T13",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 21754,
       "time_sec": 53.2,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 7,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T13_E_challenger_dispute",
       "phase": "T13",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 48363,
       "time_sec": 92.26,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 5,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T13_PREREQ_looper_t5b_t5e",
       "phase": "T13",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 84224,
       "time_sec": 383.26,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 37,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T13_PREREQ_stage2_direct_t5c_t5d",
       "phase": "T13",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 47510,
       "time_sec": 124.78,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 11,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T14_A_manifest_vs_memory",
       "phase": "T14",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 40127,
       "time_sec": 28.42,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T14_B_cross_skill_filename_drift",
       "phase": "T14",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2664,
       "time_sec": 18.26,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T14_C_checkpoint_granularity",
       "phase": "T14",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2346,
       "time_sec": 12.42,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T14_D_relative_path_fragility",
       "phase": "T14",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2827,
       "time_sec": 17.89,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T14_E_scope_creep_detection",
       "phase": "T14",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2592,
       "time_sec": 17.97,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T14_F_sanity_check_result_persistence",
       "phase": "T14",
       "result": "fail",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 14791,
       "time_sec": 15.91,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T14_G_false_positive_spec_conflict",
       "phase": "T14",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 3044,
       "time_sec": 22.3,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T14_H1_token_source_undefined",
       "phase": "T14",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2456,
       "time_sec": 18.32,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T14_H2_container_name_mismatch",
       "phase": "T14",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2210,
       "time_sec": 11.41,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T14_H3_param_contract_incomplete",
       "phase": "T14",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2508,
       "time_sec": 17.1,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T14_H4_output_protocol_field_missing",
       "phase": "T14",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2447,
       "time_sec": 14.36,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T14_H5_progress_literal_placeholder",
       "phase": "T14",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2449,
       "time_sec": 14.23,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T14_H6_container_path_translation",
       "phase": "T14",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2765,
       "time_sec": 19.35,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T14_H7_api_route_prefix_mismatch",
       "phase": "T14",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2512,
       "time_sec": 14.51,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T14_H8_token_expiry_batch_prefetch",
       "phase": "T14",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2410,
       "time_sec": 12.44,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T14_H9_phase_signal_no_integrity_gate",
       "phase": "T14",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2417,
       "time_sec": 14.34,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T15_P1_route_trigger_ambiguity",
       "phase": "T15",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 39778,
       "time_sec": 19.73,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T15_P2_cross_session_mode_recovery",
       "phase": "T15",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 3011,
       "time_sec": 20.79,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T15_P3_first_run_no_notification",
       "phase": "T15",
       "result": "fail",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2528,
       "time_sec": 22.2,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T15_P4_write_only_state_file",
       "phase": "T15",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2430,
       "time_sec": 15.69,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T15_P5_state_format_undefined",
       "phase": "T15",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2479,
       "time_sec": 18.99,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T15_P6_subskill_failure_no_fallback",
       "phase": "T15",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2513,
       "time_sec": 17.68,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T15_P7_overstepping_domain_experts",
       "phase": "T15",
       "result": "fail",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2370,
       "time_sec": 14.55,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T15_P8_ops_status_not_checked_on_recovery",
       "phase": "T15",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2477,
       "time_sec": 14.17,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T16_D1_dod_command_coverage_mismatch",
       "phase": "T16",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 39462,
       "time_sec": 14.89,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T16_D2_hook_file_timing_before_spawn",
       "phase": "T16",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2645,
       "time_sec": 12.68,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T16_D3_sigterm_handler_no_failsafe",
       "phase": "T16",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2538,
       "time_sec": 15.43,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T16_D4_review_report_no_signature",
       "phase": "T16",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2371,
       "time_sec": 12.93,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T16_D5_ut_blocked_silent_passthrough",
       "phase": "T16",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2574,
       "time_sec": 14.83,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T16_D6_phase_skip_intermediate_gate",
       "phase": "T16",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2442,
       "time_sec": 10.27,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T16_D7_manifest_no_required_field_validation",
       "phase": "T16",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2251,
       "time_sec": 9.11,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T16_D8_parallel_agent_no_timeout_handling",
       "phase": "T16",
       "result": "fail",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 0,
       "time_sec": 60.01,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 0,
+      "finish_reason": "timeout",
+      "unstable": false
     },
     {
       "task_name": "T16_D9_fix_route_no_explicit_table_ref",
       "phase": "T16",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2506,
       "time_sec": 10.8,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T17_U10_chained_command_opaque_failure",
       "phase": "T17",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2143,
       "time_sec": 12.63,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T17_U11_restart_no_connection_check",
       "phase": "T17",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 14230,
       "time_sec": 7.39,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T17_U12_return_template_missing_error_branch",
       "phase": "T17",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 1963,
       "time_sec": 8.25,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T17_U13_multi_write_no_progress_output",
       "phase": "T17",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2076,
       "time_sec": 11.57,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T17_U3_undefined_param_origin",
       "phase": "T17",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 39010,
       "time_sec": 10.18,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T17_U4_orchestrator_missing_agent_tool",
       "phase": "T17",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2071,
       "time_sec": 8.57,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T17_U5_retry_loop_no_termination",
       "phase": "T17",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2100,
       "time_sec": 11.3,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T17_U6_bash_check_silent_skip",
       "phase": "T17",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2266,
       "time_sec": 12.91,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T17_U7_output_protocol_no_termination_guarantee",
       "phase": "T17",
       "result": "fail",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2036,
       "time_sec": 9.17,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T17_U9_service_status_blacklist_match",
       "phase": "T17",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2052,
       "time_sec": 9.54,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T1_A_cross_doc_contradiction",
       "phase": "T1",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": 3.0,
+        "FI": 3.0,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 1130,
       "time_sec": 9.61,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": 3.0,
-        "ER": -1,
-        "QU": -1,
-        "CT": 3.0
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T1_B_dependency_accuracy",
       "phase": "T1",
       "result": "pass",
+      "scores": {
+        "CP": 3.0,
+        "ER": -1,
+        "CT": 3.0,
+        "FI": 3.0,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 1757,
       "time_sec": 17.37,
-      "scores": {
-        "TC": -1,
-        "CP": 3.0,
-        "FI": 3.0,
-        "ER": -1,
-        "QU": -1,
-        "CT": 3.0
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T1_C_architecture_consistency",
       "phase": "T1",
       "result": "pass",
+      "scores": {
+        "CP": 2.5,
+        "ER": -1,
+        "CT": 2.5,
+        "FI": 2.5,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 1198,
       "time_sec": 13.36,
-      "scores": {
-        "TC": -1,
-        "CP": 2.5,
-        "FI": 2.5,
-        "ER": -1,
-        "QU": -1,
-        "CT": 2.5
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T1_D_lifecycle_completeness",
       "phase": "T1",
       "result": "pass",
+      "scores": {
+        "CP": 3.0,
+        "ER": -1,
+        "CT": 3.0,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2199,
       "time_sec": 27.87,
-      "scores": {
-        "TC": -1,
-        "CP": 3.0,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": 3.0
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T1_E_design_flaw_probe",
       "phase": "T1",
       "result": "pass",
+      "scores": {
+        "CP": 3.0,
+        "ER": -1,
+        "CT": 3.0,
+        "FI": -1,
+        "TC": -1,
+        "QU": 3.0
+      },
       "tokens_total": 1412,
       "time_sec": 17.97,
-      "scores": {
-        "TC": -1,
-        "CP": 3.0,
-        "FI": -1,
-        "ER": -1,
-        "QU": 3.0,
-        "CT": 3.0
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T2_A_snake_case_pattern",
       "phase": "T2",
       "result": "pass",
+      "scores": {
+        "CP": 3.0,
+        "ER": -1,
+        "CT": -1,
+        "FI": 3.0,
+        "TC": -1,
+        "QU": 3.0
+      },
       "tokens_total": 1185,
       "time_sec": 8.66,
-      "scores": {
-        "TC": -1,
-        "CP": 3.0,
-        "FI": 3.0,
-        "ER": -1,
-        "QU": 3.0,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T2_B_class_extension",
       "phase": "T2",
       "result": "fail",
+      "scores": {
+        "CP": 1.5,
+        "ER": -1,
+        "CT": -1,
+        "FI": 1.5,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 3437,
       "time_sec": 12.39,
-      "scores": {
-        "TC": -1,
-        "CP": 1.5,
-        "FI": 1.5,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 3,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T2_C_error_handling_pattern",
       "phase": "T2",
       "result": "pass",
+      "scores": {
+        "CP": 3.0,
+        "ER": -1,
+        "CT": -1,
+        "FI": 3.0,
+        "TC": -1,
+        "QU": 3.0
+      },
       "tokens_total": 1311,
       "time_sec": 9.39,
-      "scores": {
-        "TC": -1,
-        "CP": 3.0,
-        "FI": 3.0,
-        "ER": -1,
-        "QU": 3.0,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T2_D_return_contract",
       "phase": "T2",
       "result": "fail",
+      "scores": {
+        "CP": 1.5,
+        "ER": -1,
+        "CT": -1,
+        "FI": 1.5,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2463,
       "time_sec": 12.35,
-      "scores": {
-        "TC": -1,
-        "CP": 1.5,
-        "FI": 1.5,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 3,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T2_E_docstring_interface_consistency",
       "phase": "T2",
       "result": "fail",
+      "scores": {
+        "CP": 1.5,
+        "ER": -1,
+        "CT": -1,
+        "FI": 1.5,
+        "TC": -1,
+        "QU": 1.5
+      },
       "tokens_total": 4229,
       "time_sec": 17.67,
-      "scores": {
-        "TC": -1,
-        "CP": 1.5,
-        "FI": 1.5,
-        "ER": -1,
-        "QU": 1.5,
-        "CT": -1
-      }
+      "tool_call_count": 4,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T3_A_compact_summary_quality",
       "phase": "T3",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": 3.0,
+        "FI": 3.0,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 983,
       "time_sec": 7.41,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": 3.0,
-        "ER": -1,
-        "QU": -1,
-        "CT": 3.0
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T3_B_compact_resume_ability",
       "phase": "T3",
       "result": "pass",
+      "scores": {
+        "CP": 2.5,
+        "ER": -1,
+        "CT": 2.5,
+        "FI": 2.5,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 1287,
       "time_sec": 6.1,
-      "scores": {
-        "TC": -1,
-        "CP": 2.5,
-        "FI": 2.5,
-        "ER": -1,
-        "QU": -1,
-        "CT": 2.5
-      }
+      "tool_call_count": 3,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T3_C_claude_md_compliance",
       "phase": "T3",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": 3.0,
+        "FI": 3.0,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 1704,
       "time_sec": 17.05,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": 3.0,
-        "ER": -1,
-        "QU": -1,
-        "CT": 3.0
-      }
+      "tool_call_count": 3,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T3_D_memory_vs_context",
       "phase": "T3",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": 3.0,
+        "FI": 3.0,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 1019,
       "time_sec": 9.74,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": 3.0,
-        "ER": -1,
-        "QU": -1,
-        "CT": 3.0
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T3_E_long_context_recall",
       "phase": "T3",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": 3.0,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 776,
       "time_sec": 3.92,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": 3.0
-      }
+      "tool_call_count": 0,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T4_A_skill_instruction_execution",
       "phase": "T4",
       "result": "pass",
+      "scores": {
+        "CP": 3.0,
+        "ER": -1,
+        "CT": -1,
+        "FI": 3.0,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 934,
       "time_sec": 9.45,
-      "scores": {
-        "TC": -1,
-        "CP": 3.0,
-        "FI": 3.0,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T4_B_pipeline_step_consumption",
       "phase": "T4",
       "result": "pass",
+      "scores": {
+        "CP": 3.0,
+        "ER": -1,
+        "CT": 3.0,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 1100,
       "time_sec": 11.49,
-      "scores": {
-        "TC": -1,
-        "CP": 3.0,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": 3.0
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T4_C_agent_plan_execute_report",
       "phase": "T4",
       "result": "pass",
+      "scores": {
+        "CP": 3.0,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": 3.0,
+        "QU": -1
+      },
       "tokens_total": 2191,
       "time_sec": 26.08,
-      "scores": {
-        "TC": 3.0,
-        "CP": 3.0,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T4_D_strict_schema_output",
       "phase": "T4",
       "result": "pass",
+      "scores": {
+        "CP": 3.0,
+        "ER": -1,
+        "CT": -1,
+        "FI": 3.0,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 910,
       "time_sec": 6.46,
-      "scores": {
-        "TC": -1,
-        "CP": 3.0,
-        "FI": 3.0,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T4_E_conditional_workflow_fail_path",
       "phase": "T4",
       "result": "pass",
+      "scores": {
+        "CP": 3.0,
+        "ER": -1,
+        "CT": -1,
+        "FI": 3.0,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 1011,
       "time_sec": 8.85,
-      "scores": {
-        "TC": -1,
-        "CP": 3.0,
-        "FI": 3.0,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T4_F_ambiguous_clarify",
       "phase": "T4",
       "result": "pass",
+      "scores": {
+        "CP": 3.0,
+        "ER": -1,
+        "CT": -1,
+        "FI": 3.0,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 1040,
       "time_sec": 8.21,
-      "scores": {
-        "TC": -1,
-        "CP": 3.0,
-        "FI": 3.0,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 4,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T5_A_fs_multiop",
       "phase": "T5",
       "result": "pass",
+      "scores": {
+        "CP": 3.0,
+        "ER": -1,
+        "CT": -1,
+        "FI": 3.0,
+        "TC": 3.0,
+        "QU": -1
+      },
       "tokens_total": 2710,
       "time_sec": 15.76,
-      "scores": {
-        "TC": 3.0,
-        "CP": 3.0,
-        "FI": 3.0,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 9,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T5_B_text_processing",
       "phase": "T5",
       "result": "pass",
+      "scores": {
+        "CP": 3.0,
+        "ER": -1,
+        "CT": -1,
+        "FI": 3.0,
+        "TC": 3.0,
+        "QU": -1
+      },
       "tokens_total": 4542,
       "time_sec": 24.45,
-      "scores": {
-        "TC": 3.0,
-        "CP": 3.0,
-        "FI": 3.0,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 5,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T5_C_script_write_execute",
       "phase": "T5",
       "result": "fail",
-      "tokens_total": 2702,
-      "time_sec": 17.89,
       "scores": {
-        "TC": 1.5,
         "CP": 1.5,
-        "FI": -1,
         "ER": -1,
-        "QU": 1.5,
-        "CT": -1
-      }
+        "CT": -1,
+        "FI": -1,
+        "TC": 1.5,
+        "QU": 1.5
+      },
+      "tokens_total": 6025,
+      "time_sec": 51.79,
+      "tool_call_count": 7,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T5_D_git_workflow",
       "phase": "T5",
       "result": "pass",
+      "scores": {
+        "CP": 3.0,
+        "ER": -1,
+        "CT": 3.0,
+        "FI": -1,
+        "TC": 3.0,
+        "QU": -1
+      },
       "tokens_total": 2043,
       "time_sec": 13.15,
-      "scores": {
-        "TC": 3.0,
-        "CP": 3.0,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": 3.0
-      }
+      "tool_call_count": 4,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T5_E_error_recovery",
       "phase": "T5",
       "result": "pass",
+      "scores": {
+        "CP": 3.0,
+        "ER": 3.0,
+        "CT": -1,
+        "FI": -1,
+        "TC": 3.0,
+        "QU": -1
+      },
       "tokens_total": 1637,
       "time_sec": 11.43,
-      "scores": {
-        "TC": 3.0,
-        "CP": 3.0,
-        "FI": -1,
-        "ER": 3.0,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 5,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T5_F_python_data_processing",
       "phase": "T5",
       "result": "pass",
+      "scores": {
+        "CP": 3.0,
+        "ER": -1,
+        "CT": -1,
+        "FI": 3.0,
+        "TC": 3.0,
+        "QU": -1
+      },
       "tokens_total": 41160,
       "time_sec": 36.12,
-      "scores": {
-        "TC": 3.0,
-        "CP": 3.0,
-        "FI": 3.0,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 5,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T5_G_runtime_error_defense",
       "phase": "T5",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": 3.0,
+        "CT": -1,
+        "FI": -1,
+        "TC": 3.0,
+        "QU": 3.0
+      },
       "tokens_total": 3937,
       "time_sec": 36.83,
-      "scores": {
-        "TC": 3.0,
-        "CP": -1,
-        "FI": -1,
-        "ER": 3.0,
-        "QU": 3.0,
-        "CT": -1
-      }
+      "tool_call_count": 6,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T6_A_news_analysis",
       "phase": "T6",
       "result": "pass",
+      "scores": {
+        "CP": 3.0,
+        "ER": -1,
+        "CT": -1,
+        "FI": 3.0,
+        "TC": -1,
+        "QU": 3.0
+      },
       "tokens_total": 2200,
       "time_sec": 19.07,
-      "scores": {
-        "TC": -1,
-        "CP": 3.0,
-        "FI": 3.0,
-        "ER": -1,
-        "QU": 3.0,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T6_B_code_review",
       "phase": "T6",
       "result": "pass",
+      "scores": {
+        "CP": 3.0,
+        "ER": -1,
+        "CT": -1,
+        "FI": 3.0,
+        "TC": -1,
+        "QU": 3.0
+      },
       "tokens_total": 2112,
       "time_sec": 22.87,
-      "scores": {
-        "TC": -1,
-        "CP": 3.0,
-        "FI": 3.0,
-        "ER": -1,
-        "QU": 3.0,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T6_C_multi_doc_synthesis",
       "phase": "T6",
       "result": "pass",
+      "scores": {
+        "CP": 2.5,
+        "ER": -1,
+        "CT": -1,
+        "FI": 2.5,
+        "TC": -1,
+        "QU": 2.5
+      },
       "tokens_total": 2873,
       "time_sec": 33.95,
-      "scores": {
-        "TC": -1,
-        "CP": 2.5,
-        "FI": 2.5,
-        "ER": -1,
-        "QU": 2.5,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T6_D_data_insights",
       "phase": "T6",
       "result": "pass",
+      "scores": {
+        "CP": 3.0,
+        "ER": -1,
+        "CT": -1,
+        "FI": 3.0,
+        "TC": -1,
+        "QU": 3.0
+      },
       "tokens_total": 6321,
       "time_sec": 60.29,
-      "scores": {
-        "TC": -1,
-        "CP": 3.0,
-        "FI": 3.0,
-        "ER": -1,
-        "QU": 3.0,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T7_A_skill_review_self",
       "phase": "T7",
       "result": "pass",
+      "scores": {
+        "CP": 3.0,
+        "ER": 3.0,
+        "CT": -1,
+        "FI": 3.0,
+        "TC": 3.0,
+        "QU": -1
+      },
       "tokens_total": 63738,
       "time_sec": 340.47,
-      "scores": {
-        "TC": 3.0,
-        "CP": 3.0,
-        "FI": 3.0,
-        "ER": 3.0,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 68,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T7_B_skill_review_other",
       "phase": "T7",
       "result": "pass",
+      "scores": {
+        "CP": 3.0,
+        "ER": -1,
+        "CT": -1,
+        "FI": 3.0,
+        "TC": 3.0,
+        "QU": 3.0
+      },
       "tokens_total": 66797,
       "time_sec": 335.75,
-      "scores": {
-        "TC": 3.0,
-        "CP": 3.0,
-        "FI": 3.0,
-        "ER": -1,
-        "QU": 3.0,
-        "CT": -1
-      }
+      "tool_call_count": 81,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T7_C_skill_test_self",
       "phase": "T7",
       "result": "fail",
-      "tokens_total": 0,
-      "time_sec": 2702.34,
       "scores": {
-        "TC": 1.5,
-        "CP": 1.5,
+        "CP": 2.25,
+        "ER": 2.25,
+        "CT": 2.25,
         "FI": -1,
-        "ER": 1.5,
-        "QU": -1,
-        "CT": 1.5
-      }
+        "TC": 2.25,
+        "QU": -1
+      },
+      "tokens_total": 104269,
+      "time_sec": 4255.42,
+      "tool_call_count": 131,
+      "finish_reason": "end_turn",
+      "unstable": true
     },
     {
       "task_name": "T7_D_skill_test_other",
       "phase": "T7",
       "result": "fail",
-      "tokens_total": 0,
-      "time_sec": 2144.04,
       "scores": {
-        "TC": 1.0,
-        "CP": 1.0,
-        "FI": 1.0,
+        "CP": 2.0,
         "ER": -1,
-        "QU": 1.0,
-        "CT": -1
-      }
+        "CT": -1,
+        "FI": 2.0,
+        "TC": 2.0,
+        "QU": 2.0
+      },
+      "tokens_total": 44488,
+      "time_sec": 3009.17,
+      "tool_call_count": 75,
+      "finish_reason": "end_turn",
+      "unstable": true
     },
     {
       "task_name": "T7_E_gh_clone_pipeline",
       "phase": "T7",
       "result": "pass",
+      "scores": {
+        "CP": 3.0,
+        "ER": -1,
+        "CT": 3.0,
+        "FI": 3.0,
+        "TC": 3.0,
+        "QU": -1
+      },
       "tokens_total": 31874,
       "time_sec": 563.01,
-      "scores": {
-        "TC": 3.0,
-        "CP": 3.0,
-        "FI": 3.0,
-        "ER": -1,
-        "QU": -1,
-        "CT": 3.0
-      }
+      "tool_call_count": 101,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T7_F_cross_skill_orchestration",
       "phase": "T7",
       "result": "fail",
-      "tokens_total": 0,
-      "time_sec": 1800.09,
       "scores": {
-        "TC": 1.0,
-        "CP": 1.0,
-        "FI": 1.0,
+        "CP": 1.25,
         "ER": -1,
-        "QU": 1.0,
-        "CT": 1.0
-      }
+        "CT": 1.25,
+        "FI": 1.25,
+        "TC": 1.25,
+        "QU": 1.25
+      },
+      "tokens_total": 5740,
+      "time_sec": 1871.03,
+      "tool_call_count": 9,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T8_A_backlog_prioritize",
       "phase": "T8",
       "result": "pass",
+      "scores": {
+        "CP": 3.0,
+        "ER": -1,
+        "CT": -1,
+        "FI": 3.0,
+        "TC": -1,
+        "QU": 3.0
+      },
       "tokens_total": 3549,
       "time_sec": 32.97,
-      "scores": {
-        "TC": -1,
-        "CP": 3.0,
-        "FI": 3.0,
-        "ER": -1,
-        "QU": 3.0,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T8_B_sprint_plan",
       "phase": "T8",
       "result": "pass",
+      "scores": {
+        "CP": 3.0,
+        "ER": -1,
+        "CT": -1,
+        "FI": 3.0,
+        "TC": -1,
+        "QU": 3.0
+      },
       "tokens_total": 5121,
       "time_sec": 41.83,
-      "scores": {
-        "TC": -1,
-        "CP": 3.0,
-        "FI": 3.0,
-        "ER": -1,
-        "QU": 3.0,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T8_C_autonomous_routing",
       "phase": "T8",
       "result": "pass",
+      "scores": {
+        "CP": 3.0,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": 3.0,
+        "QU": 3.0
+      },
       "tokens_total": 6139,
       "time_sec": 34.39,
-      "scores": {
-        "TC": 3.0,
-        "CP": 3.0,
-        "FI": -1,
-        "ER": -1,
-        "QU": 3.0,
-        "CT": -1
-      }
+      "tool_call_count": 9,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T8_D_retro_audit",
       "phase": "T8",
       "result": "pass",
+      "scores": {
+        "CP": 3.0,
+        "ER": -1,
+        "CT": -1,
+        "FI": 3.0,
+        "TC": -1,
+        "QU": 3.0
+      },
       "tokens_total": 2195,
       "time_sec": 24.3,
-      "scores": {
-        "TC": -1,
-        "CP": 3.0,
-        "FI": 3.0,
-        "ER": -1,
-        "QU": 3.0,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T8_E_toolchain_proposal",
       "phase": "T8",
       "result": "pass",
+      "scores": {
+        "CP": 3.0,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": 3.0
+      },
       "tokens_total": 2201,
       "time_sec": 24.19,
-      "scores": {
-        "TC": -1,
-        "CP": 3.0,
-        "FI": -1,
-        "ER": -1,
-        "QU": 3.0,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T9_A_dispatch_review_vs_test",
       "phase": "T9",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2199,
       "time_sec": 11.55,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T9_B_dispatch_full_pipeline",
       "phase": "T9",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 1992,
       "time_sec": 8.95,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T9_C_dispatch_shrinker",
       "phase": "T9",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2280,
       "time_sec": 13.44,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T9_D_dispatch_packer_sync",
       "phase": "T9",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 14220,
       "time_sec": 7.85,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T9_E_dispatch_review_vs_pattern_review",
       "phase": "T9",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 1863,
       "time_sec": 6.15,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     },
     {
       "task_name": "T9_F_dispatch_clarify_ambiguous",
       "phase": "T9",
       "result": "pass",
+      "scores": {
+        "CP": -1,
+        "ER": -1,
+        "CT": -1,
+        "FI": -1,
+        "TC": -1,
+        "QU": -1
+      },
       "tokens_total": 2049,
       "time_sec": 10.84,
-      "scores": {
-        "TC": -1,
-        "CP": -1,
-        "FI": -1,
-        "ER": -1,
-        "QU": -1,
-        "CT": -1
-      }
+      "tool_call_count": 1,
+      "finish_reason": "end_turn",
+      "unstable": false
     }
   ]
 }

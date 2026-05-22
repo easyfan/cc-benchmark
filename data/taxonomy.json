@@ -11,7 +11,7 @@
       "weight": 0.25
     },
     "FI": {
-      "label": "Output Faithfulness",
+      "label": "Faithfulness",
       "label_zh": "输出忠实度",
       "weight": 0.15
     },
@@ -26,7 +26,7 @@
       "weight": 0.15
     },
     "CT": {
-      "label": "Context Retention",
+      "label": "Context Tracking",
       "label_zh": "上下文保持",
       "weight": 0.1
     }
@@ -86,5 +86,11 @@
       "weight": 0.2,
       "stage": 3
     }
+  },
+  "scoring_formula": {
+    "cap_score": "(weighted_dim_avg / 3.0 * 10) * pass_rate",
+    "token_eff": "min(10, 10 * min_tokens / model_tokens) * pass_rate",
+    "time_eff": "min(10, 10 * min_time   / model_time)   * pass_rate",
+    "ci": "0.55 * cap_score + 0.30 * token_eff + 0.15 * time_eff"
   }
 }
