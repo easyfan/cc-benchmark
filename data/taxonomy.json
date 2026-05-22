@@ -1,0 +1,90 @@
+{
+  "dimensions": {
+    "TC": {
+      "label": "Tool Call Accuracy",
+      "label_zh": "工具调用正确率",
+      "weight": 0.2
+    },
+    "CP": {
+      "label": "Task Completion",
+      "label_zh": "任务完成度",
+      "weight": 0.25
+    },
+    "FI": {
+      "label": "Output Faithfulness",
+      "label_zh": "输出忠实度",
+      "weight": 0.15
+    },
+    "ER": {
+      "label": "Error Recovery",
+      "label_zh": "错误恢复",
+      "weight": 0.15
+    },
+    "QU": {
+      "label": "Output Quality",
+      "label_zh": "输出质量",
+      "weight": 0.15
+    },
+    "CT": {
+      "label": "Context Retention",
+      "label_zh": "上下文保持",
+      "weight": 0.1
+    }
+  },
+  "phases": {
+    "T0": {
+      "label": "Basic Tool Execution",
+      "label_zh": "基础工具执行",
+      "weight": 0.05,
+      "stage": 1
+    },
+    "T1": {
+      "label": "Understanding & Reasoning",
+      "label_zh": "理解与推理",
+      "weight": 0.1,
+      "stage": 1
+    },
+    "T2": {
+      "label": "Code Writing",
+      "label_zh": "代码编写",
+      "weight": 0.1,
+      "stage": 1
+    },
+    "T3": {
+      "label": "Context Management",
+      "label_zh": "上下文管理",
+      "weight": 0.1,
+      "stage": 2
+    },
+    "T4": {
+      "label": "CC CLI Basics",
+      "label_zh": "CC CLI 基础",
+      "weight": 0.05,
+      "stage": 2
+    },
+    "T5": {
+      "label": "File & Script Operations",
+      "label_zh": "文件与脚本",
+      "weight": 0.1,
+      "stage": 3
+    },
+    "T6": {
+      "label": "Analysis & Synthesis",
+      "label_zh": "分析与综合",
+      "weight": 0.15,
+      "stage": 3
+    },
+    "T7": {
+      "label": "Complex Orchestration",
+      "label_zh": "复杂编排与 Review",
+      "weight": 0.15,
+      "stage": 3
+    },
+    "T8": {
+      "label": "PM Engineering",
+      "label_zh": "PM 工程化",
+      "weight": 0.2,
+      "stage": 3
+    }
+  }
+}

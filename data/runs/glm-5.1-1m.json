@@ -1,0 +1,2080 @@
+{
+  "model_id": "glm-5.1-1m",
+  "generated_at": "2026-05-22T03:21:03Z",
+  "tasks": [
+    {
+      "task_name": "T0_A_single_tool",
+      "phase": "T0",
+      "result": "pass",
+      "capability_score": 3.5,
+      "ces_score": 9.5172,
+      "tokens_total": 35473,
+      "time_sec": 15.89,
+      "scores": {
+        "TC": 3.0,
+        "CP": -1,
+        "FI": -1,
+        "ER": 3.0,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T0_B_chain_tools",
+      "phase": "T0",
+      "result": "pass",
+      "capability_score": 3.5,
+      "ces_score": 9.6603,
+      "tokens_total": 619,
+      "time_sec": 17.08,
+      "scores": {
+        "TC": 3.0,
+        "CP": -1,
+        "FI": -1,
+        "ER": 3.0,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T0_C_error_handling",
+      "phase": "T0",
+      "result": "pass",
+      "capability_score": 3.5,
+      "ces_score": 9.9343,
+      "tokens_total": 295,
+      "time_sec": 12.27,
+      "scores": {
+        "TC": 3.0,
+        "CP": -1,
+        "FI": -1,
+        "ER": 3.0,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T0_D_instruction_boundaries",
+      "phase": "T0",
+      "result": "pass",
+      "capability_score": 3.5,
+      "ces_score": 10.0,
+      "tokens_total": 327,
+      "time_sec": 6.42,
+      "scores": {
+        "TC": 3.0,
+        "CP": -1,
+        "FI": 3.0,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T0_E_sequential_execution",
+      "phase": "T0",
+      "result": "pass",
+      "capability_score": 4.5,
+      "ces_score": 6.0188,
+      "tokens_total": 442,
+      "time_sec": 47.7,
+      "scores": {
+        "TC": 3.0,
+        "CP": 3.0,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T0_F_tool_retry_recovery",
+      "phase": "T0",
+      "result": "pass",
+      "capability_score": 1.5,
+      "ces_score": null,
+      "tokens_total": 550,
+      "time_sec": 23.65,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": 3.0,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T0_G_noise_robustness",
+      "phase": "T0",
+      "result": "pass",
+      "capability_score": 3.0,
+      "ces_score": null,
+      "tokens_total": 414,
+      "time_sec": 21.98,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": 3.0,
+        "ER": 3.0,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T10_A_s1_findings_format",
+      "phase": "T10",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 35881,
+      "time_sec": 26.9,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T10_B_challenger_verdicts",
+      "phase": "T10",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 583,
+      "time_sec": 17.38,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T10_C_news_learner_format",
+      "phase": "T10",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 814,
+      "time_sec": 21.28,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T10_D_stage_gate_protocol",
+      "phase": "T10",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 583,
+      "time_sec": 12.62,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T10_E_looper_result_format",
+      "phase": "T10",
+      "result": "pass",
+      "capability_score": 1.5,
+      "ces_score": null,
+      "tokens_total": 580,
+      "time_sec": 10.74,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": 3.0,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T11_A_full_publish_sequence",
+      "phase": "T11",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 669,
+      "time_sec": 17.64,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T11_B_pattern_pipeline",
+      "phase": "T11",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 826,
+      "time_sec": 16.44,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T11_C_resume_from_stage",
+      "phase": "T11",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 624,
+      "time_sec": 10.62,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T11_D_news_digest_handoff",
+      "phase": "T11",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 524,
+      "time_sec": 22.86,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T12_A_shrinker_proposal_mode",
+      "phase": "T12",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 1094,
+      "time_sec": 19.02,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T12_B_patterns_patch_flag",
+      "phase": "T12",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 652,
+      "time_sec": 14.29,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T12_C_readme_multilang",
+      "phase": "T12",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 398,
+      "time_sec": 7.99,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T12_D_no_meta_tool_for_generic",
+      "phase": "T12",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 874,
+      "time_sec": 23.31,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T12_E_permission_boundary_proposals",
+      "phase": "T12",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 715,
+      "time_sec": 14.68,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T13_A_stage1_findings",
+      "phase": "T13",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": 10,
+      "tokens_total": 71216,
+      "time_sec": 223.94,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T13_A_stage2_challenger",
+      "phase": "T13",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": 6.7464,
+      "tokens_total": 37163,
+      "time_sec": 313.64,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T13_B_stage1_findings",
+      "phase": "T13",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": 10,
+      "tokens_total": 3269,
+      "time_sec": 74.22,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T13_B_stage2_challenger",
+      "phase": "T13",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": 10,
+      "tokens_total": 9935,
+      "time_sec": 219.69,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T13_C_interface_drift",
+      "phase": "T13",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 2822,
+      "time_sec": 103.5,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T13_D_frontmatter_trap",
+      "phase": "T13",
+      "result": "fail",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 0,
+      "time_sec": 120.02,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T13_E_challenger_dispute",
+      "phase": "T13",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 7323,
+      "time_sec": 297.55,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T13_PREREQ_looper_t5b_t5e",
+      "phase": "T13",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": 10,
+      "tokens_total": 69320,
+      "time_sec": 315.32,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T13_PREREQ_stage2_direct_t5c_t5d",
+      "phase": "T13",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 7486,
+      "time_sec": 289.46,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T14_A_manifest_vs_memory",
+      "phase": "T14",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 38092,
+      "time_sec": 52.29,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T14_B_cross_skill_filename_drift",
+      "phase": "T14",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 1464,
+      "time_sec": 19.04,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T14_C_checkpoint_granularity",
+      "phase": "T14",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 837,
+      "time_sec": 12.63,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T14_D_relative_path_fragility",
+      "phase": "T14",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 1137,
+      "time_sec": 15.05,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T14_E_scope_creep_detection",
+      "phase": "T14",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 751,
+      "time_sec": 14.41,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T14_F_sanity_check_result_persistence",
+      "phase": "T14",
+      "result": "fail",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 1143,
+      "time_sec": 16.29,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T14_G_false_positive_spec_conflict",
+      "phase": "T14",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 1914,
+      "time_sec": 26.86,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T14_H1_token_source_undefined",
+      "phase": "T14",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 665,
+      "time_sec": 14.94,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T14_H2_container_name_mismatch",
+      "phase": "T14",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 646,
+      "time_sec": 11.67,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T14_H3_param_contract_incomplete",
+      "phase": "T14",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 926,
+      "time_sec": 22.17,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T14_H4_output_protocol_field_missing",
+      "phase": "T14",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 775,
+      "time_sec": 12.32,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T14_H5_progress_literal_placeholder",
+      "phase": "T14",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 878,
+      "time_sec": 15.78,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T14_H6_container_path_translation",
+      "phase": "T14",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 1078,
+      "time_sec": 17.78,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T14_H7_api_route_prefix_mismatch",
+      "phase": "T14",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 1198,
+      "time_sec": 16.45,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T14_H8_token_expiry_batch_prefetch",
+      "phase": "T14",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 825,
+      "time_sec": 14.48,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T14_H9_phase_signal_no_integrity_gate",
+      "phase": "T14",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 960,
+      "time_sec": 16.93,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T15_P1_route_trigger_ambiguity",
+      "phase": "T15",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 36224,
+      "time_sec": 16.64,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T15_P2_cross_session_mode_recovery",
+      "phase": "T15",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 35959,
+      "time_sec": 32.76,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T15_P3_first_run_no_notification",
+      "phase": "T15",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 1469,
+      "time_sec": 21.93,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T15_P4_write_only_state_file",
+      "phase": "T15",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 966,
+      "time_sec": 28.87,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T15_P5_state_format_undefined",
+      "phase": "T15",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 1524,
+      "time_sec": 40.96,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T15_P6_subskill_failure_no_fallback",
+      "phase": "T15",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 778,
+      "time_sec": 25.46,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T15_P7_overstepping_domain_experts",
+      "phase": "T15",
+      "result": "fail",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 1345,
+      "time_sec": 34.16,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T15_P8_ops_status_not_checked_on_recovery",
+      "phase": "T15",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 1127,
+      "time_sec": 30.41,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T16_D1_dod_command_coverage_mismatch",
+      "phase": "T16",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 35894,
+      "time_sec": 14.78,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T16_D2_hook_file_timing_before_spawn",
+      "phase": "T16",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 1069,
+      "time_sec": 13.79,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T16_D3_sigterm_handler_no_failsafe",
+      "phase": "T16",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 728,
+      "time_sec": 12.63,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T16_D4_review_report_no_signature",
+      "phase": "T16",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 35621,
+      "time_sec": 13.8,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T16_D5_ut_blocked_silent_passthrough",
+      "phase": "T16",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 1466,
+      "time_sec": 27.37,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T16_D6_phase_skip_intermediate_gate",
+      "phase": "T16",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 956,
+      "time_sec": 12.42,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T16_D7_manifest_no_required_field_validation",
+      "phase": "T16",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 763,
+      "time_sec": 11.48,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T16_D8_parallel_agent_no_timeout_handling",
+      "phase": "T16",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 1433,
+      "time_sec": 32.99,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T16_D9_fix_route_no_explicit_table_ref",
+      "phase": "T16",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 1078,
+      "time_sec": 17.5,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T17_U10_chained_command_opaque_failure",
+      "phase": "T17",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 404,
+      "time_sec": 10.98,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T17_U11_restart_no_connection_check",
+      "phase": "T17",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 418,
+      "time_sec": 9.45,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T17_U12_return_template_missing_error_branch",
+      "phase": "T17",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 476,
+      "time_sec": 8.8,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T17_U13_multi_write_no_progress_output",
+      "phase": "T17",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 814,
+      "time_sec": 13.99,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T17_U3_undefined_param_origin",
+      "phase": "T17",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 35538,
+      "time_sec": 9.92,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T17_U4_orchestrator_missing_agent_tool",
+      "phase": "T17",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 35587,
+      "time_sec": 12.57,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T17_U5_retry_loop_no_termination",
+      "phase": "T17",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 433,
+      "time_sec": 9.01,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T17_U6_bash_check_silent_skip",
+      "phase": "T17",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 868,
+      "time_sec": 14.89,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T17_U7_output_protocol_no_termination_guarantee",
+      "phase": "T17",
+      "result": "fail",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 880,
+      "time_sec": 13.42,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T17_U9_service_status_blacklist_match",
+      "phase": "T17",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 770,
+      "time_sec": 16.01,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T1_A_cross_doc_contradiction",
+      "phase": "T1",
+      "result": "pass",
+      "capability_score": 2.5,
+      "ces_score": 9.6667,
+      "tokens_total": 818,
+      "time_sec": 21.0,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": 3.0,
+        "ER": -1,
+        "QU": -1,
+        "CT": 3.0
+      }
+    },
+    {
+      "task_name": "T1_B_dependency_accuracy",
+      "phase": "T1",
+      "result": "pass",
+      "capability_score": 5.0,
+      "ces_score": 8.9475,
+      "tokens_total": 965,
+      "time_sec": 25.87,
+      "scores": {
+        "TC": -1,
+        "CP": 3.0,
+        "FI": 3.0,
+        "ER": -1,
+        "QU": -1,
+        "CT": 3.0
+      }
+    },
+    {
+      "task_name": "T1_C_architecture_consistency",
+      "phase": "T1",
+      "result": "pass",
+      "capability_score": 5.0,
+      "ces_score": 8.7159,
+      "tokens_total": 1080,
+      "time_sec": 33.35,
+      "scores": {
+        "TC": -1,
+        "CP": 3.0,
+        "FI": 3.0,
+        "ER": -1,
+        "QU": -1,
+        "CT": 3.0
+      }
+    },
+    {
+      "task_name": "T1_D_lifecycle_completeness",
+      "phase": "T1",
+      "result": "pass",
+      "capability_score": 3.5,
+      "ces_score": 7.9359,
+      "tokens_total": 1703,
+      "time_sec": 57.02,
+      "scores": {
+        "TC": -1,
+        "CP": 3.0,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": 3.0
+      }
+    },
+    {
+      "task_name": "T1_E_design_flaw_probe",
+      "phase": "T1",
+      "result": "pass",
+      "capability_score": 5.0,
+      "ces_score": 9.495,
+      "tokens_total": 1037,
+      "time_sec": 32.34,
+      "scores": {
+        "TC": -1,
+        "CP": 3.0,
+        "FI": -1,
+        "ER": -1,
+        "QU": 3.0,
+        "CT": 3.0
+      }
+    },
+    {
+      "task_name": "T2_A_snake_case_pattern",
+      "phase": "T2",
+      "result": "pass",
+      "capability_score": 5.5,
+      "ces_score": 9.4588,
+      "tokens_total": 1121,
+      "time_sec": 14.79,
+      "scores": {
+        "TC": -1,
+        "CP": 3.0,
+        "FI": 3.0,
+        "ER": -1,
+        "QU": 3.0,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T2_B_class_extension",
+      "phase": "T2",
+      "result": "fail",
+      "capability_score": 1.3333,
+      "ces_score": 0.185,
+      "tokens_total": 0,
+      "time_sec": 60.02,
+      "scores": {
+        "TC": -1,
+        "CP": 1.0,
+        "FI": 1.0,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T2_C_error_handling_pattern",
+      "phase": "T2",
+      "result": "pass",
+      "capability_score": 5.5,
+      "ces_score": 7.5113,
+      "tokens_total": 1546,
+      "time_sec": 25.72,
+      "scores": {
+        "TC": -1,
+        "CP": 3.0,
+        "FI": 3.0,
+        "ER": -1,
+        "QU": 3.0,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T2_D_return_contract",
+      "phase": "T2",
+      "result": "fail",
+      "capability_score": 2.0,
+      "ces_score": 6.2336,
+      "tokens_total": 1844,
+      "time_sec": 28.14,
+      "scores": {
+        "TC": -1,
+        "CP": 1.5,
+        "FI": 1.5,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T2_E_docstring_interface_consistency",
+      "phase": "T2",
+      "result": "pass",
+      "capability_score": 5.5,
+      "ces_score": 10.0,
+      "tokens_total": 902,
+      "time_sec": 13.35,
+      "scores": {
+        "TC": -1,
+        "CP": 3.0,
+        "FI": 3.0,
+        "ER": -1,
+        "QU": 3.0,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T3_A_compact_summary_quality",
+      "phase": "T3",
+      "result": "pass",
+      "capability_score": 2.5,
+      "ces_score": 10.0,
+      "tokens_total": 687,
+      "time_sec": 10.43,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": 3.0,
+        "ER": -1,
+        "QU": -1,
+        "CT": 3.0
+      }
+    },
+    {
+      "task_name": "T3_B_compact_resume_ability",
+      "phase": "T3",
+      "result": "pass",
+      "capability_score": 4.1667,
+      "ces_score": 10.0,
+      "tokens_total": 1109,
+      "time_sec": 11.3,
+      "scores": {
+        "TC": -1,
+        "CP": 2.5,
+        "FI": 2.5,
+        "ER": -1,
+        "QU": -1,
+        "CT": 2.5
+      }
+    },
+    {
+      "task_name": "T3_C_claude_md_compliance",
+      "phase": "T3",
+      "result": "pass",
+      "capability_score": 2.5,
+      "ces_score": 9.9444,
+      "tokens_total": 1737,
+      "time_sec": 45.87,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": 3.0,
+        "ER": -1,
+        "QU": -1,
+        "CT": 3.0
+      }
+    },
+    {
+      "task_name": "T3_D_memory_vs_context",
+      "phase": "T3",
+      "result": "pass",
+      "capability_score": 2.5,
+      "ces_score": 9.715,
+      "tokens_total": 680,
+      "time_sec": 13.15,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": 3.0,
+        "ER": -1,
+        "QU": -1,
+        "CT": 3.0
+      }
+    },
+    {
+      "task_name": "T3_E_long_context_recall",
+      "phase": "T3",
+      "result": "pass",
+      "capability_score": 1.0,
+      "ces_score": 7.4724,
+      "tokens_total": 820,
+      "time_sec": 19.65,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": 3.0
+      }
+    },
+    {
+      "task_name": "T4_A_skill_instruction_execution",
+      "phase": "T4",
+      "result": "pass",
+      "capability_score": 4.0,
+      "ces_score": 8.7734,
+      "tokens_total": 811,
+      "time_sec": 20.15,
+      "scores": {
+        "TC": -1,
+        "CP": 3.0,
+        "FI": 3.0,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T4_B_pipeline_step_consumption",
+      "phase": "T4",
+      "result": "pass",
+      "capability_score": 3.5,
+      "ces_score": 8.938,
+      "tokens_total": 875,
+      "time_sec": 23.21,
+      "scores": {
+        "TC": -1,
+        "CP": 3.0,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": 3.0
+      }
+    },
+    {
+      "task_name": "T4_C_agent_plan_execute_report",
+      "phase": "T4",
+      "result": "pass",
+      "capability_score": 4.5,
+      "ces_score": 7.6249,
+      "tokens_total": 1568,
+      "time_sec": 57.38,
+      "scores": {
+        "TC": 3.0,
+        "CP": 3.0,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T4_D_strict_schema_output",
+      "phase": "T4",
+      "result": "pass",
+      "capability_score": 3.3333,
+      "ces_score": 9.032,
+      "tokens_total": 811,
+      "time_sec": 18.06,
+      "scores": {
+        "TC": -1,
+        "CP": 2.5,
+        "FI": 2.5,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T4_E_conditional_workflow_fail_path",
+      "phase": "T4",
+      "result": "pass",
+      "capability_score": 4.0,
+      "ces_score": 9.6815,
+      "tokens_total": 619,
+      "time_sec": 13.25,
+      "scores": {
+        "TC": -1,
+        "CP": 3.0,
+        "FI": 3.0,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T4_F_ambiguous_clarify",
+      "phase": "T4",
+      "result": "fail",
+      "capability_score": 2.0,
+      "ces_score": null,
+      "tokens_total": 1119,
+      "time_sec": 28.52,
+      "scores": {
+        "TC": -1,
+        "CP": 1.5,
+        "FI": 1.5,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T5_A_fs_multiop",
+      "phase": "T5",
+      "result": "pass",
+      "capability_score": 6.0,
+      "ces_score": 9.9738,
+      "tokens_total": 1742,
+      "time_sec": 28.66,
+      "scores": {
+        "TC": 3.0,
+        "CP": 3.0,
+        "FI": 3.0,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T5_B_text_processing",
+      "phase": "T5",
+      "result": "pass",
+      "capability_score": 6.0,
+      "ces_score": 10.0,
+      "tokens_total": 1867,
+      "time_sec": 23.35,
+      "scores": {
+        "TC": 3.0,
+        "CP": 3.0,
+        "FI": 3.0,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T5_C_script_write_execute",
+      "phase": "T5",
+      "result": "pass",
+      "capability_score": 6.0,
+      "ces_score": 4.808,
+      "tokens_total": 7347,
+      "time_sec": 118.38,
+      "scores": {
+        "TC": 3.0,
+        "CP": 3.0,
+        "FI": -1,
+        "ER": -1,
+        "QU": 3.0,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T5_D_git_workflow",
+      "phase": "T5",
+      "result": "pass",
+      "capability_score": 5.5,
+      "ces_score": 8.0156,
+      "tokens_total": 1761,
+      "time_sec": 61.46,
+      "scores": {
+        "TC": 3.0,
+        "CP": 3.0,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": 3.0
+      }
+    },
+    {
+      "task_name": "T5_E_error_recovery",
+      "phase": "T5",
+      "result": "pass",
+      "capability_score": 6.0,
+      "ces_score": null,
+      "tokens_total": 1169,
+      "time_sec": 23.48,
+      "scores": {
+        "TC": 3.0,
+        "CP": 3.0,
+        "FI": -1,
+        "ER": 3.0,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T5_F_python_data_processing",
+      "phase": "T5",
+      "result": "pass",
+      "capability_score": 6.0,
+      "ces_score": null,
+      "tokens_total": 37243,
+      "time_sec": 76.59,
+      "scores": {
+        "TC": 3.0,
+        "CP": 3.0,
+        "FI": 3.0,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T5_G_runtime_error_defense",
+      "phase": "T5",
+      "result": "pass",
+      "capability_score": 5.0,
+      "ces_score": null,
+      "tokens_total": 2039,
+      "time_sec": 77.59,
+      "scores": {
+        "TC": 3.0,
+        "CP": -1,
+        "FI": -1,
+        "ER": 3.0,
+        "QU": 3.0,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T6_A_news_analysis",
+      "phase": "T6",
+      "result": "pass",
+      "capability_score": 5.5,
+      "ces_score": 9.3874,
+      "tokens_total": 1994,
+      "time_sec": 46.19,
+      "scores": {
+        "TC": -1,
+        "CP": 3.0,
+        "FI": 3.0,
+        "ER": -1,
+        "QU": 3.0,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T6_B_code_review",
+      "phase": "T6",
+      "result": "pass",
+      "capability_score": 5.5,
+      "ces_score": 9.1335,
+      "tokens_total": 1903,
+      "time_sec": 57.53,
+      "scores": {
+        "TC": -1,
+        "CP": 3.0,
+        "FI": 3.0,
+        "ER": -1,
+        "QU": 3.0,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T6_C_multi_doc_synthesis",
+      "phase": "T6",
+      "result": "pass",
+      "capability_score": 5.5,
+      "ces_score": 8.2364,
+      "tokens_total": 1970,
+      "time_sec": 84.23,
+      "scores": {
+        "TC": -1,
+        "CP": 3.0,
+        "FI": 3.0,
+        "ER": -1,
+        "QU": 3.0,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T6_D_data_insights",
+      "phase": "T6",
+      "result": "pass",
+      "capability_score": 5.5,
+      "ces_score": 9.7827,
+      "tokens_total": 2866,
+      "time_sec": 72.66,
+      "scores": {
+        "TC": -1,
+        "CP": 3.0,
+        "FI": 3.0,
+        "ER": -1,
+        "QU": 3.0,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T7_A_skill_review_self",
+      "phase": "T7",
+      "result": "pass",
+      "capability_score": 7.5,
+      "ces_score": null,
+      "tokens_total": 45127,
+      "time_sec": 710.5,
+      "scores": {
+        "TC": 3.0,
+        "CP": 3.0,
+        "FI": 3.0,
+        "ER": 3.0,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T7_B_skill_review_other",
+      "phase": "T7",
+      "result": "pass",
+      "capability_score": 7.5,
+      "ces_score": null,
+      "tokens_total": 49140,
+      "time_sec": 837.14,
+      "scores": {
+        "TC": 3.0,
+        "CP": 3.0,
+        "FI": 3.0,
+        "ER": -1,
+        "QU": 3.0,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T7_C_skill_test_self",
+      "phase": "T7",
+      "result": "pass",
+      "capability_score": 7.0,
+      "ces_score": null,
+      "tokens_total": 60870,
+      "time_sec": 1155.12,
+      "scores": {
+        "TC": 3.0,
+        "CP": 3.0,
+        "FI": -1,
+        "ER": 3.0,
+        "QU": -1,
+        "CT": 3.0
+      }
+    },
+    {
+      "task_name": "T7_D_skill_test_other",
+      "phase": "T7",
+      "result": "fail",
+      "capability_score": 2.5,
+      "ces_score": null,
+      "tokens_total": 0,
+      "time_sec": 1800.05,
+      "scores": {
+        "TC": 1.0,
+        "CP": 1.0,
+        "FI": 1.0,
+        "ER": -1,
+        "QU": 1.0,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T7_E_gh_clone_pipeline",
+      "phase": "T7",
+      "result": "fail",
+      "capability_score": 2.3333,
+      "ces_score": null,
+      "tokens_total": 0,
+      "time_sec": 1800.02,
+      "scores": {
+        "TC": 1.0,
+        "CP": 1.0,
+        "FI": 1.0,
+        "ER": -1,
+        "QU": -1,
+        "CT": 1.0
+      }
+    },
+    {
+      "task_name": "T7_F_cross_skill_orchestration",
+      "phase": "T7",
+      "result": "pass",
+      "capability_score": 8.5,
+      "ces_score": null,
+      "tokens_total": 18819,
+      "time_sec": 143.12,
+      "scores": {
+        "TC": 3.0,
+        "CP": 3.0,
+        "FI": 3.0,
+        "ER": -1,
+        "QU": 3.0,
+        "CT": 3.0
+      }
+    },
+    {
+      "task_name": "T8_A_backlog_prioritize",
+      "phase": "T8",
+      "result": "pass",
+      "capability_score": 5.5,
+      "ces_score": 8.8378,
+      "tokens_total": 2471,
+      "time_sec": 49.22,
+      "scores": {
+        "TC": -1,
+        "CP": 3.0,
+        "FI": 3.0,
+        "ER": -1,
+        "QU": 3.0,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T8_B_sprint_plan",
+      "phase": "T8",
+      "result": "fail",
+      "capability_score": 2.75,
+      "ces_score": 10.0,
+      "tokens_total": 10367,
+      "time_sec": 137.5,
+      "scores": {
+        "TC": -1,
+        "CP": 1.5,
+        "FI": 1.5,
+        "ER": -1,
+        "QU": 1.5,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T8_C_autonomous_routing",
+      "phase": "T8",
+      "result": "pass",
+      "capability_score": 6.0,
+      "ces_score": 9.7303,
+      "tokens_total": 4558,
+      "time_sec": 71.02,
+      "scores": {
+        "TC": 3.0,
+        "CP": 3.0,
+        "FI": -1,
+        "ER": -1,
+        "QU": 3.0,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T8_D_retro_audit",
+      "phase": "T8",
+      "result": "pass",
+      "capability_score": 5.5,
+      "ces_score": 9.7089,
+      "tokens_total": 1079,
+      "time_sec": 25.42,
+      "scores": {
+        "TC": -1,
+        "CP": 3.0,
+        "FI": 3.0,
+        "ER": -1,
+        "QU": 3.0,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T8_E_toolchain_proposal",
+      "phase": "T8",
+      "result": "pass",
+      "capability_score": 4.0,
+      "ces_score": 9.1139,
+      "tokens_total": 1652,
+      "time_sec": 51.43,
+      "scores": {
+        "TC": -1,
+        "CP": 3.0,
+        "FI": -1,
+        "ER": -1,
+        "QU": 3.0,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T9_A_dispatch_review_vs_test",
+      "phase": "T9",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 792,
+      "time_sec": 20.27,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T9_B_dispatch_full_pipeline",
+      "phase": "T9",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 424,
+      "time_sec": 15.13,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T9_C_dispatch_shrinker",
+      "phase": "T9",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 435,
+      "time_sec": 10.55,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T9_D_dispatch_packer_sync",
+      "phase": "T9",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 485,
+      "time_sec": 14.37,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T9_E_dispatch_review_vs_pattern_review",
+      "phase": "T9",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 535,
+      "time_sec": 16.15,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    },
+    {
+      "task_name": "T9_F_dispatch_clarify_ambiguous",
+      "phase": "T9",
+      "result": "pass",
+      "capability_score": 0.0,
+      "ces_score": null,
+      "tokens_total": 286,
+      "time_sec": 8.45,
+      "scores": {
+        "TC": -1,
+        "CP": -1,
+        "FI": -1,
+        "ER": -1,
+        "QU": -1,
+        "CT": -1
+      }
+    }
+  ]
+}

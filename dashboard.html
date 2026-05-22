@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LLM 能力测评报告</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+       background: #f0f2f5; color: #222; font-size: 13px; }
+.page { max-width: 1300px; margin: 0 auto; padding: 20px; }
+h1 { font-size: 22px; color: #1a1a2e; margin-bottom: 4px; }
+.subtitle { color: #666; font-size: 12px; margin-bottom: 20px; }
+.section { background: #fff; border-radius: 8px; padding: 20px;
+           margin-bottom: 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+.section h2 { font-size: 15px; color: #333; margin-bottom: 14px;
+              padding-bottom: 8px; border-bottom: 2px solid #f0f0f0; }
+table { width: 100%; border-collapse: collapse; font-size: 12px; }
+th { background: #f7f8fa; color: #555; padding: 8px 10px;
+     text-align: left; font-weight: 600; border-bottom: 2px solid #e8e8e8; }
+td { padding: 7px 10px; border-bottom: 1px solid #f0f0f0; }
+tr:hover td { background: #fafbff; }
+.score-high { background: #d4f5e0; color: #1a7a3a; font-weight: bold; border-radius: 3px; padding: 2px 5px; }
+.score-mid  { background: #fff3cd; color: #856404; font-weight: bold; border-radius: 3px; padding: 2px 5px; }
+.score-low  { background: #f8d7da; color: #842029; font-weight: bold; border-radius: 3px; padding: 2px 5px; }
+.badge-go   { background: #28a745; color: #fff; border-radius: 10px; padding: 2px 8px; font-size: 11px; }
+.badge-nogo { background: #dc3545; color: #fff; border-radius: 10px; padding: 2px 8px; font-size: 11px; }
+.tier-flagship { background: #6610f2; color: #fff; border-radius: 10px; padding: 2px 8px; font-size: 10px; font-weight:600; }
+.tier-mid      { background: #0d6efd; color: #fff; border-radius: 10px; padding: 2px 8px; font-size: 10px; font-weight:600; }
+.tier-unknown  { background: #adb5bd; color: #fff; border-radius: 10px; padding: 2px 8px; font-size: 10px; }
+.baseline-tag  { background: #e9f5e9; color: #2d6a2d; border: 1px solid #b7dfb7; border-radius: 6px; padding: 1px 6px; font-size: 10px; margin-left: 4px; }
+.tabs { display: flex; gap: 4px; margin-bottom: 0; flex-wrap: wrap; }
+.tab-btn { padding: 7px 16px; border: none; background: #f0f2f5; color: #555;
+           cursor: pointer; border-radius: 6px 6px 0 0; font-size: 12px; font-weight: 500; }
+.tab-btn.active { background: #fff; color: #1a1a2e; font-weight: 600;
+                  box-shadow: 0 -2px 0 #4A90D9; }
+.tab-content { display: none; padding: 16px; background: #fff;
+               border-radius: 0 8px 8px 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+.tab-content.active { display: block; }
+.radar-grid { display: flex; flex-wrap: wrap; gap: 16px; }
+.radar-card { background: #fafbff; border: 1px solid #e8e8e8; border-radius: 8px;
+              padding: 12px; text-align: center; min-width: 240px;
+              cursor: pointer; transition: border-color 0.15s, box-shadow 0.15s; }
+.radar-card h3 { font-size: 12px; color: #444; margin-bottom: 8px; }
+.radar-card .total { font-size: 22px; font-weight: bold; color: #4A90D9; }
+.radar-card .total-label { font-size: 10px; color: #888; }
+.number { text-align: right; font-variant-numeric: tabular-nums; }
+.heatmap-wrap { overflow-x: auto; }
+.sortable { cursor: pointer; }
+.loading { color: #888; padding: 40px; text-align: center; font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>LLM 开源模型能力测评报告</h1>
+  <div class="subtitle" id="subtitle">加载中…</div>
+
+  <div id="loading" class="section loading">正在加载数据，请稍候…</div>
+  <div id="app" style="display:none"></div>
+</div>
+
+<script>
+// ─── 常量 ────────────────────────────────────────────────────────────────────
+const DIM_LABELS = { TC:'工具调用', CP:'任务完成', FI:'输出忠实', ER:'错误恢复', QU:'输出质量', CT:'上下文保持' };
+const DIM_ORDER  = ['TC','CP','FI','ER','QU','CT'];
+const PHASE_ORDER = ['T0','T1','T2','T3','T4','T5','T6','T7','T8'];
+const PHASE_LABELS = { T0:'基础工具', T1:'理解推理', T2:'代码编写', T3:'上下文', T4:'CLI基础', T5:'文件脚本', T6:'分析综合', T7:'复杂编排', T8:'PM工程' };
+const T8_TASKS = ['T8_A_backlog_prioritize','T8_B_sprint_plan','T8_C_autonomous_routing','T8_D_retro_audit','T8_E_toolchain_proposal'];
+const T8_LABELS = { T8_A_backlog_prioritize:'A', T8_B_sprint_plan:'B', T8_C_autonomous_routing:'C', T8_D_retro_audit:'D', T8_E_toolchain_proposal:'E' };
+const T8_TITLES = { T8_A_backlog_prioritize:'backlog prioritize', T8_B_sprint_plan:'sprint plan', T8_C_autonomous_routing:'autonomous routing', T8_D_retro_audit:'retro audit', T8_E_toolchain_proposal:'toolchain proposal' };
+
+// ─── 状态 ────────────────────────────────────────────────────────────────────
+let _selectedModel = null;
+let _globalModels  = {};  // model_id → meta
+let _globalRuns    = {};  // model_id → { tasks: [...] }
+let _leaderboard   = [];  // sorted entries
+
+// ─── fetch helpers ───────────────────────────────────────────────────────────
+async function fetchJSON(path) {
+  const r = await fetch(path);
+  if (!r.ok) throw new Error(`HTTP ${r.status}: ${path}`);
+  return r.json();
+}
+
+// ─── 加载入口 ────────────────────────────────────────────────────────────────
+async function loadAll() {
+  const [lb, models] = await Promise.all([
+    fetchJSON('data/leaderboard.json'),
+    fetchJSON('data/models.json'),
+  ]);
+
+  _leaderboard = lb.entries;
+
+  // 建 model meta 索引
+  for (const m of models.models) {
+    _globalModels[m.model_id] = m;
+  }
+
+  // 加载所有 runs（并行）
+  const runPromises = models.models.map(async m => {
+    try {
+      const runs = await fetchJSON(`data/runs/${encodeURIComponent(m.model_id)}.json`);
+      _globalRuns[m.model_id] = runs;
+    } catch(e) {
+      console.warn('runs load failed:', m.model_id, e);
+      _globalRuns[m.model_id] = { tasks: [] };
+    }
+  });
+  await Promise.all(runPromises);
+
+  // 更新 subtitle
+  document.getElementById('subtitle').textContent =
+    `基线：${lb.baseline_model}  |  生成时间：${lb.generated_at}  |  模型数量：${models.models.length}`;
+
+  // 渲染
+  render();
+  document.getElementById('loading').style.display = 'none';
+  document.getElementById('app').style.display = '';
+}
+
+// ─── 工具函数 ────────────────────────────────────────────────────────────────
+function scoreClass(v) {
+  if (v >= 7)  return 'score-high';
+  if (v >= 4)  return 'score-mid';
+  return 'score-low';
+}
+
+function tierBadge(tier) {
+  const cls = tier === 'flagship' ? 'tier-flagship' : tier === 'mid' ? 'tier-mid' : 'tier-unknown';
+  const label = tier === 'flagship' ? 'Flagship' : tier === 'mid' ? 'Mid-tier' : tier || 'Unknown';
+  return `<span class="${cls}">${label}</span>`;
+}
+
+function passColor(rate) {
+  return rate >= 0.9 ? '#27ae60' : rate >= 0.7 ? '#E67E22' : '#dc3545';
+}
+
+function fmtScore(v, decimals=1) {
+  if (v == null) return '—';
+  return v.toFixed(decimals);
+}
+
+function getDisplayName(modelId) {
+  return (_globalModels[modelId] || {}).display_name || modelId;
+}
+
+function isBaseline(modelId) {
+  return (_globalModels[modelId] || {}).is_baseline || false;
+}
+
+// ─── 雷达图 SVG 生成 ─────────────────────────────────────────────────────────
+function makeRadarSVG(dimScores10, size=220) {
+  // 6 个维度，顺序固定
+  const N = 6;
+  const cx = size / 2, cy = size / 2;
+  const R = size / 2 - 30;  // 满分半径
+  const angles = DIM_ORDER.map((_, i) => (Math.PI * 2 * i / N) - Math.PI / 2);
+  const rings = [1, 2, 3, 4, 5];
+
+  function pt(r, angle) {
+    return [cx + r * Math.cos(angle), cy + r * Math.sin(angle)];
+  }
+
+  let svg = `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}" xmlns="http://www.w3.org/2000/svg">`;
+
+  // 背景六边形
+  for (const ring of rings) {
+    const pts = angles.map(a => pt(R * ring / 5, a).join(',')).join(' L ');
+    svg += `<path d="M ${pts} Z" fill="none" stroke="#e0e0e0" stroke-width="0.8"/>`;
+  }
+  // 轴线
+  for (const a of angles) {
+    const [x, y] = pt(R, a);
+    svg += `<line x1="${cx}" y1="${cy}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}" stroke="#d0d0d0" stroke-width="0.8"/>`;
+  }
+
+  // 数据多边形
+  const dataPoints = DIM_ORDER.map((dim, i) => {
+    const val = dimScores10[dim] != null ? dimScores10[dim] : 0;
+    const r = (val / 10) * R;
+    return pt(r, angles[i]);
+  });
+  const pathD = dataPoints.map(([x,y], i) => (i === 0 ? 'M ' : 'L ') + x.toFixed(1) + ',' + y.toFixed(1)).join(' ') + ' Z';
+  svg += `<path d="${pathD}" fill="rgba(74,144,217,0.20)" stroke="#4A90D9" stroke-width="2"/>`;
+  for (const [x,y] of dataPoints) {
+    svg += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="3" fill="#4A90D9"/>`;
+  }
+
+  // 标签
+  const labelPad = 20;
+  DIM_ORDER.forEach((dim, i) => {
+    const [x, y] = pt(R + labelPad, angles[i]);
+    const anchor = x < cx - 5 ? 'end' : x > cx + 5 ? 'start' : 'middle';
+    const val = dimScores10[dim] != null ? dimScores10[dim].toFixed(1) : '—';
+    svg += `<text x="${x.toFixed(1)}" y="${(y - 6).toFixed(1)}" text-anchor="${anchor}" font-size="9" font-family="sans-serif" fill="#333">${DIM_LABELS[dim]}<tspan dy="10" x="${x.toFixed(1)}" font-weight="bold" fill="#4A90D9">${val}</tspan></text>`;
+  });
+
+  svg += '</svg>';
+  return svg;
+}
+
+// ─── 汇总表 ──────────────────────────────────────────────────────────────────
+function renderSummaryTable() {
+  const asc = {};
+  let rows = _leaderboard.map(e => {
+    const meta = _globalModels[e.model_id] || {};
+    const passRaw = e.pass_rate || 0;
+    const runs = (_globalRuns[e.model_id] || {tasks: []}).tasks;
+    const scored = runs.filter(t => PHASE_ORDER.includes(t.phase));
+    const total  = scored.length;
+    const passed = scored.filter(t => t.result === 'pass').length;
+    const cap = e.capability_score;
+    const ws  = e.weighted_score;
+    return { e, meta, passRaw, passed, total, cap, ws };
+  });
+
+  const thead = `<thead><tr>
+    <th>模型</th><th>等级</th>
+    <th class="sortable" data-col="ws" title="加权分 = 能力×0.7 + CES×0.3">加权分(/10) <span class="sort-icon">↕</span></th>
+    <th class="sortable" data-col="cap" title="点击排序">能力分(/10) <span class="sort-icon">↕</span></th>
+    <th class="sortable number" data-col="pass" title="点击排序">Pass/Total <span class="sort-icon">↕</span></th>
+    <th class="sortable number" data-col="tokens" title="点击排序">总Token（K）<span class="sort-icon">↕</span></th>
+    <th class="sortable number" data-col="ces" title="点击排序">CES(/10) <span class="sort-icon">↕</span></th>
+  </tr></thead>`;
+
+  const tbody = '<tbody>' + rows.map(({e, meta, passRaw, passed, total, cap, ws}) => {
+    const bl = isBaseline(e.model_id) ? `<span class="baseline-tag">基线</span>` : '';
+    const provider = meta.provider ? `<span style="color:#999;font-size:10px"> / ${meta.provider}</span>` : '';
+    const passColor_ = passColor(passRaw);
+    const tkK = (e.total_tokens / 1000).toFixed(0);
+    return `<tr data-model="${e.model_id}" data-ws="${ws}" data-cap="${cap}" data-pass="${passRaw}" data-tokens="${e.total_tokens}" data-ces="${e.ces_score || 0}" onclick="toggleModel('${e.model_id}')" style="cursor:pointer">
+      <td><strong>${getDisplayName(e.model_id)}</strong>${provider}${bl}</td>
+      <td>${tierBadge(meta.tier)}</td>
+      <td><span class="${scoreClass(ws)}" style="font-size:13px">${fmtScore(ws)}</span></td>
+      <td><span class="${scoreClass(cap)}">${fmtScore(cap)}</span></td>
+      <td class="number"><span style="color:${passColor_};font-weight:bold">${passed}/${total}</span></td>
+      <td class="number">${tkK}K</td>
+      <td class="number">${fmtScore(e.ces_score)}</td>
+    </tr>`;
+  }).join('') + '</tbody>';
+
+  return `<div class="section">
+    <h2>汇总对比</h2>
+    <div style="margin-bottom:8px;font-size:11px;color:#888">
+      加权分 = 能力分 × 0.7 + CES × 0.3（CES 以基线 token/时间为参照，越低越好则分越高）
+    </div>
+    <table id="summary-table">${thead}${tbody}</table>
+    <script>
+    (function(){
+      var asc={};
+      document.querySelectorAll('#summary-table th.sortable').forEach(function(th){
+        th.addEventListener('click',function(){
+          var col=th.dataset.col; asc[col]=!asc[col];
+          var tbody=document.querySelector('#summary-table tbody');
+          var rows=Array.from(tbody.querySelectorAll('tr'));
+          rows.sort(function(a,b){
+            var av=parseFloat(a.dataset[col]||0), bv=parseFloat(b.dataset[col]||0);
+            var desc=(col==='tokens')?!asc[col]:asc[col];
+            return desc?bv-av:av-bv;
+          });
+          rows.forEach(function(r){tbody.appendChild(r);});
+          document.querySelectorAll('#summary-table th.sortable .sort-icon').forEach(function(ic){ic.textContent='↕';});
+          th.querySelector('.sort-icon').textContent=asc[col]?'↑':'↓';
+        });
+      });
+    })();
+    <\/script>
+  </div>`;
+}
+
+// ─── 雷达图网格 ──────────────────────────────────────────────────────────────
+function renderRadarGrid() {
+  const cards = _leaderboard.map(e => {
+    const meta = _globalModels[e.model_id] || {};
+    const dimScores = e.dimension_scores || {};
+    const svgHtml = makeRadarSVG(dimScores, 220);
+    const ws = e.weighted_score;
+    const wsClass = scoreClass(ws);
+    return `<div class="radar-card" data-model="${e.model_id}" onclick="toggleModel('${e.model_id}')">
+      <h3>${getDisplayName(e.model_id)}</h3>
+      <div style="margin-bottom:6px">${tierBadge(meta.tier)}</div>
+      ${svgHtml}
+      <div class="total" style="font-size:28px"><span class="${wsClass}" style="padding:4px 10px;border-radius:6px">${fmtScore(ws)}</span></div>
+      <div class="total-label" style="margin-top:4px">加权分 / 10</div>
+      <div style="margin-top:8px;font-size:11px;color:#888">
+        能力 ${fmtScore(e.capability_score)} &nbsp;|&nbsp; CES ${fmtScore(e.ces_score)}
+      </div>
+    </div>`;
+  }).join('');
+
+  return `<div class="section">
+    <h2>能力雷达图（6维）</h2>
+    <div class="radar-grid">${cards}</div>
+  </div>`;
+}
+
+// ─── 条形图 ──────────────────────────────────────────────────────────────────
+function renderBarChart() {
+  const sorted = [..._leaderboard].sort((a, b) => b.total_tokens - a.total_tokens);
+  const maxTk = sorted[0].total_tokens;
+
+  const bars = sorted.map(e => {
+    const pct = (e.total_tokens / maxTk * 100).toFixed(1);
+    const tkK = (e.total_tokens / 1000).toFixed(1);
+    return `<div class="bar-row" data-model="${e.model_id}" onclick="toggleModel('${e.model_id}')"
+      style="display:flex;align-items:center;gap:8px;margin-bottom:5px;cursor:pointer;padding:3px 4px;border-radius:4px;transition:opacity 0.15s">
+      <span style="width:160px;text-align:right;font-size:11px;color:#555;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${e.model_id}</span>
+      <div style="flex:1;background:#f0f0f0;border-radius:3px;height:22px">
+        <div style="width:${pct}%;background:#E67E22;height:100%;border-radius:3px"></div>
+      </div>
+      <span style="width:48px;font-size:11px;color:#333">${tkK}K</span>
+    </div>`;
+  }).join('');
+
+  return `<div class="section">
+    <h2>总 Token 消耗对比</h2>
+    <div style="max-width:560px">${bars}</div>
+  </div>`;
+}
+
+// ─── T8 热力图 ───────────────────────────────────────────────────────────────
+function renderHeatmap() {
+  // 颜色插值：0→红 1.5→黄 3→绿
+  function heatColor(val) {
+    if (val == null) return '#f5f5f5';
+    if (val >= 2.5)  return '#dcf096';
+    if (val >= 1.5)  return '#e1e396';
+    if (val >= 0.5)  return '#ffd580';
+    return '#ff9696';
+  }
+
+  const header = `<tr><th style="padding:4px 10px;text-align:left;font-size:11px"></th>` +
+    T8_TASKS.map(t => `<th style="text-align:center;font-size:10px;padding:4px 8px;white-space:nowrap" title="${T8_TITLES[t]}">${T8_LABELS[t]}</th>`).join('') +
+    `</tr>`;
+
+  const rows = _leaderboard.map(e => {
+    const runs = (_globalRuns[e.model_id] || {tasks: []}).tasks;
+    const t8Map = {};
+    for (const t of runs) {
+      if (t.phase === 'T8') t8Map[t.task_name] = t;
+    }
+    const cells = T8_TASKS.map(tname => {
+      const task = t8Map[tname];
+      if (!task) return `<td style="text-align:center;font-size:11px;background:#f5f5f5;padding:5px 8px;border:1px solid #fff">N/A</td>`;
+      // T8 主要用 CP 维度评分
+      const scores = task.scores || {};
+      const capVal = task.capability_score;
+      // 显示能力分（满分10 → 转回到满分3格式：cap/10*3）
+      const raw = capVal != null ? (capVal / 10 * 3) : null;
+      const displayVal = raw != null ? raw.toFixed(2) : 'N/A';
+      const bg = heatColor(raw);
+      return `<td style="text-align:center;font-size:11px;background:${bg};padding:5px 8px;border:1px solid #fff">${displayVal}</td>`;
+    }).join('');
+
+    return `<tr class="heatmap-row" data-model="${e.model_id}" onclick="toggleModel('${e.model_id}')" style="cursor:pointer;transition:opacity 0.15s">
+      <td style="font-size:11px;padding:5px 10px;white-space:nowrap;color:#333">${getDisplayName(e.model_id)}</td>
+      ${cells}
+    </tr>`;
+  }).join('');
+
+  return `<div class="section">
+    <h2>T8 PM 工程化分项得分热力图</h2>
+    <div class="heatmap-wrap"><table style="border-collapse:collapse"><thead>${header}</thead><tbody>${rows}</tbody></table></div>
+    <div style="margin-top:8px;font-size:11px;color:#888">
+      颜色：<span style="background:#dcf096;padding:2px 8px;border-radius:3px">高</span>
+      → <span style="background:#ffe0b0;padding:2px 8px;border-radius:3px">中</span>
+      → <span style="background:#f8d7da;padding:2px 8px;border-radius:3px">低</span>
+      &nbsp;（能力分，满分 3.0）
+    </div>
+  </div>`;
+}
+
+// ─── 模型详情标签页 ──────────────────────────────────────────────────────────
+function tabId(modelId) { return modelId.replace(/\W/g,'_'); }
+
+function renderDimDetailTable(dimScores10) {
+  const rows = DIM_ORDER.map(dim => {
+    const val = dimScores10[dim];
+    const bar = val != null ? `<div style="background:#4A90D9;height:6px;width:${(val*10).toFixed(0)}px;border-radius:3px;display:inline-block;vertical-align:middle"></div><span style="font-size:10px;margin-left:3px">${val.toFixed(1)}</span>` : '—';
+    return `<tr>
+      <td>${DIM_LABELS[dim]}</td>
+      <td style="color:#888;font-size:10px">${dim}</td>
+      <td>${bar}</td>
+    </tr>`;
+  }).join('');
+  return `<table>
+    <thead><tr><th>维度</th><th>编码</th><th style="color:#4A90D9">能力分</th></tr></thead>
+    <tbody>${rows}</tbody>
+  </table>`;
+}
+
+function renderPhaseTable(phaseScores) {
+  const rows = PHASE_ORDER.map(ph => {
+    const val = phaseScores[ph];
+    const bar = val != null ? `<div style="background:#4A90D9;height:6px;width:${Math.round(val*10)}px;border-radius:3px;display:inline-block;vertical-align:middle"></div><span style="margin-left:3px">${val.toFixed(2)}</span>` : '—';
+    return `<tr>
+      <td><strong>${ph}</strong></td>
+      <td style="color:#666">${PHASE_LABELS[ph]}</td>
+      <td class="number">${bar}</td>
+    </tr>`;
+  }).join('');
+  return `<table style="max-width:420px">
+    <thead><tr><th>阶段</th><th>名称</th><th class="number">均值</th></tr></thead>
+    <tbody>${rows}</tbody>
+  </table>`;
+}
+
+function renderTaskList(tasks) {
+  const relevant = tasks.filter(t => PHASE_ORDER.includes(t.phase) || t.phase === 'T0.5');
+  const rows = relevant.map(t => {
+    const icon = t.result === 'pass' ? `<span style="color:#27ae60">✓</span>` : `<span style="color:#dc3545">✗</span>`;
+    const tkK = t.tokens_total ? (t.tokens_total).toLocaleString() : '—';
+    const time = t.time_sec ? `${t.time_sec.toFixed(1)}s` : '—';
+    return `<tr>
+      <td>${t.task_name}</td>
+      <td>${icon}</td>
+      <td class="number">${tkK}</td>
+      <td class="number">${time}</td>
+      <td class="number">${fmtScore(t.capability_score)}</td>
+      <td class="number">${t.ces_score != null ? fmtScore(t.ces_score) : '—'}</td>
+    </tr>`;
+  }).join('');
+  return `<div style="margin-top:14px">
+    <table>
+      <thead><tr>
+        <th>任务</th><th>结果</th><th class="number">Tokens</th>
+        <th class="number">耗时</th><th class="number">能力分</th><th class="number">CES</th>
+      </tr></thead>
+      <tbody>${rows}</tbody>
+    </table>
+  </div>`;
+}
+
+function renderModelDetail(modelId) {
+  const e = _leaderboard.find(x => x.model_id === modelId);
+  if (!e) return '<p>暂无数据</p>';
+  const meta  = _globalModels[modelId] || {};
+  const runs  = (_globalRuns[modelId] || {tasks: []}).tasks;
+  const dimScores = e.dimension_scores || {};
+  const phaseScores = e.phase_scores || {};
+
+  return `<div style="display:flex;gap:20px;flex-wrap:wrap;align-items:flex-start">
+    <div style="flex-shrink:0">${makeRadarSVG(dimScores, 240)}</div>
+    <div style="flex:1;min-width:200px">
+      ${renderDimDetailTable(dimScores)}
+    </div>
+    <div style="flex:1;min-width:200px">
+      ${renderPhaseTable(phaseScores)}
+    </div>
+  </div>
+  ${renderTaskList(runs)}`;
+}
+
+function renderDetailTabs() {
+  const first = _leaderboard[0];
+  const btnHtml = _leaderboard.map((e, i) => {
+    const active = i === 0 ? ' active' : '';
+    const tid = tabId(e.model_id);
+    const name = getDisplayName(e.model_id).slice(0,20);
+    return `<button class="tab-btn${active}" id="btn_models_${tid}" onclick="showTab('models','${tid}');selectModel('${e.model_id}')">${name}</button>`;
+  }).join('');
+
+  const contentHtml = _leaderboard.map((e, i) => {
+    const active = i === 0 ? ' active' : '';
+    const tid = tabId(e.model_id);
+    return `<div class="tab-content${active}" id="models_${tid}">${renderModelDetail(e.model_id)}</div>`;
+  }).join('');
+
+  return `<div class="section">
+    <h2>模型详情</h2>
+    <div id="models">
+      <div class="tabs">${btnHtml}</div>
+      ${contentHtml}
+    </div>
+  </div>`;
+}
+
+// ─── 交互：选中/取消模型 ──────────────────────────────────────────────────────
+function selectModel(modelId) {
+  document.querySelectorAll('tr[data-model]').forEach(el => {
+    el.style.background = el.dataset.model === modelId ? '#eef4ff' : '';
+    el.style.outline    = el.dataset.model === modelId ? '2px solid #4A90D9' : '';
+  });
+  document.querySelectorAll('.radar-card[data-model]').forEach(el => {
+    el.style.borderColor = el.dataset.model === modelId ? '#4A90D9' : '#e8e8e8';
+    el.style.boxShadow   = el.dataset.model === modelId ? '0 0 0 2px #4A90D9' : '';
+  });
+  document.querySelectorAll('.bar-row[data-model]').forEach(el => {
+    el.style.opacity = el.dataset.model === modelId ? '1' : '0.45';
+  });
+  document.querySelectorAll('.heatmap-row[data-model]').forEach(el => {
+    el.style.opacity = el.dataset.model === modelId ? '1' : '0.45';
+  });
+  const tid = tabId(modelId);
+  if (document.getElementById('models_' + tid)) showTab('models', tid);
+  _selectedModel = modelId;
+}
+
+function toggleModel(modelId) {
+  if (_selectedModel === modelId) {
+    _selectedModel = null;
+    document.querySelectorAll('[data-model]').forEach(el => {
+      el.style.background = '';
+      el.style.outline    = '';
+      el.style.boxShadow  = '';
+      el.style.borderColor = '';
+      el.style.opacity    = '';
+    });
+    document.querySelectorAll('.radar-card[data-model]').forEach(el => {
+      el.style.borderColor = '#e8e8e8';
+    });
+  } else {
+    selectModel(modelId);
+  }
+}
+
+function showTab(groupId, tabId_) {
+  document.querySelectorAll('#' + groupId + ' .tab-content').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('#' + groupId + ' .tab-btn').forEach(el => el.classList.remove('active'));
+  const c = document.getElementById(groupId + '_' + tabId_);
+  if (c) c.classList.add('active');
+  const b = document.getElementById('btn_' + groupId + '_' + tabId_);
+  if (b) b.classList.add('active');
+}
+
+// ─── 主渲染 ──────────────────────────────────────────────────────────────────
+function render() {
+  const app = document.getElementById('app');
+  app.innerHTML =
+    renderSummaryTable() +
+    renderRadarGrid() +
+    renderBarChart() +
+    renderHeatmap() +
+    renderDetailTabs();
+}
+
+// ─── 启动 ────────────────────────────────────────────────────────────────────
+loadAll().catch(err => {
+  document.getElementById('loading').textContent = '加载失败：' + err.message;
+  console.error(err);
+});
+</script>
+</body>
+</html>

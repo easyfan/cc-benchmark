@@ -1,0 +1,77 @@
+{
+  "generated_at": "2026-05-22T03:21:03Z",
+  "models": [
+    {
+      "model_id": "MiniMax-M2.7",
+      "display_name": "MiniMax M2.7",
+      "provider": "MiniMax",
+      "tier": "flagship",
+      "context_window": 1000000,
+      "is_baseline": false,
+      "note": "MiniMax 旗舰模型 M2.7，支持超长上下文。"
+    },
+    {
+      "model_id": "claude-sonnet-4.6",
+      "display_name": "Claude Sonnet 4.6",
+      "provider": "Anthropic",
+      "tier": "mid",
+      "context_window": 200000,
+      "is_baseline": true,
+      "note": "Anthropic 中端模型，非旗舰。对应 Opus 4.6 为顶级模型。"
+    },
+    {
+      "model_id": "deepseek-v4-pro-1m",
+      "display_name": "DeepSeek V4 Pro (1M ctx)",
+      "provider": "DeepSeek",
+      "tier": "flagship",
+      "context_window": 1000000,
+      "is_baseline": false,
+      "note": "DeepSeek 旗舰模型，1M 上下文版本。对标 Anthropic 顶级模型（Opus 级别）。"
+    },
+    {
+      "model_id": "glm-5.1-1m",
+      "display_name": "GLM 5.1 (1M ctx)",
+      "provider": "Zhipu AI",
+      "tier": "flagship",
+      "context_window": 1000000,
+      "is_baseline": false,
+      "note": "智谱 AI GLM-4 系列旗舰模型，1M 上下文版本。"
+    },
+    {
+      "model_id": "kimi-for-coding-1m",
+      "display_name": "Kimi for Coding (1M ctx)",
+      "provider": "Moonshot AI",
+      "tier": "flagship",
+      "context_window": 1000000,
+      "is_baseline": false,
+      "note": "Moonshot AI 代码专项模型，1M 上下文版本。"
+    },
+    {
+      "model_id": "mimo-v2.5-1m",
+      "display_name": "Xiaomi Mimo v2.5 (1M ctx)",
+      "provider": "Xiaomi",
+      "tier": "mid",
+      "context_window": 1000000,
+      "is_baseline": false,
+      "note": "小米 Mimo 中端模型，1M 上下文版本。对标主流中端模型（Sonnet 级别）。"
+    },
+    {
+      "model_id": "mimo-v2.5-pro-1m",
+      "display_name": "Xiaomi Mimo v2.5 Pro (1M ctx)",
+      "provider": "Xiaomi",
+      "tier": "flagship",
+      "context_window": 1000000,
+      "is_baseline": false,
+      "note": "小米 Mimo 旗舰模型，1M 上下文版本。对标 Anthropic 顶级模型（Opus 级别）。"
+    },
+    {
+      "model_id": "qwen3.6-plus[1m]",
+      "display_name": "Qwen3.6-Plus [1M]",
+      "provider": "Alibaba",
+      "tier": "mid",
+      "context_window": 1000000,
+      "is_baseline": false,
+      "note": "阿里巴巴 Qwen3.6-Plus，1M 上下文窗口版本。"
+    }
+  ]
+}
