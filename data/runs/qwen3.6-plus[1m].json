@@ -1,13 +1,11 @@
 {
   "model_id": "qwen3.6-plus[1m]",
-  "generated_at": "2026-05-22T03:21:03Z",
+  "generated_at": "2026-05-22T04:58:30Z",
   "tasks": [
     {
       "task_name": "T0_A_single_tool",
       "phase": "T0",
       "result": "pass",
-      "capability_score": 3.5,
-      "ces_score": 10.0,
       "tokens_total": 36856,
       "time_sec": 10.16,
       "scores": {
@@ -23,8 +21,6 @@
       "task_name": "T0_B_chain_tools",
       "phase": "T0",
       "result": "pass",
-      "capability_score": 3.5,
-      "ces_score": 9.3096,
       "tokens_total": 11451,
       "time_sec": 19.64,
       "scores": {
@@ -40,8 +36,6 @@
       "task_name": "T0_C_error_handling",
       "phase": "T0",
       "result": "pass",
-      "capability_score": 3.5,
-      "ces_score": 10.0,
       "tokens_total": 10991,
       "time_sec": 7.9,
       "scores": {
@@ -57,8 +51,6 @@
       "task_name": "T0_D_instruction_boundaries",
       "phase": "T0",
       "result": "pass",
-      "capability_score": 3.5,
-      "ces_score": 9.3069,
       "tokens_total": 11454,
       "time_sec": 12.24,
       "scores": {
@@ -74,8 +66,6 @@
       "task_name": "T0_E_sequential_execution",
       "phase": "T0",
       "result": "pass",
-      "capability_score": 4.5,
-      "ces_score": 10.0,
       "tokens_total": 11112,
       "time_sec": 8.65,
       "scores": {
@@ -91,8 +81,6 @@
       "task_name": "T0_F_tool_retry_recovery",
       "phase": "T0",
       "result": "pass",
-      "capability_score": 1.25,
-      "ces_score": null,
       "tokens_total": 11107,
       "time_sec": 9.76,
       "scores": {
@@ -108,8 +96,6 @@
       "task_name": "T0_G_noise_robustness",
       "phase": "T0",
       "result": "pass",
-      "capability_score": 3.0,
-      "ces_score": null,
       "tokens_total": 11106,
       "time_sec": 8.53,
       "scores": {
@@ -125,8 +111,6 @@
       "task_name": "T10_A_s1_findings_format",
       "phase": "T10",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 37505,
       "time_sec": 25.6,
       "scores": {
@@ -142,8 +126,6 @@
       "task_name": "T10_B_challenger_verdicts",
       "phase": "T10",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 11480,
       "time_sec": 19.38,
       "scores": {
@@ -159,8 +141,6 @@
       "task_name": "T10_C_news_learner_format",
       "phase": "T10",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 11435,
       "time_sec": 18.66,
       "scores": {
@@ -176,8 +156,6 @@
       "task_name": "T10_D_stage_gate_protocol",
       "phase": "T10",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 11537,
       "time_sec": 12.82,
       "scores": {
@@ -193,8 +171,6 @@
       "task_name": "T10_E_looper_result_format",
       "phase": "T10",
       "result": "pass",
-      "capability_score": 1.5,
-      "ces_score": null,
       "tokens_total": 11147,
       "time_sec": 7.72,
       "scores": {
@@ -210,8 +186,6 @@
       "task_name": "T11_A_full_publish_sequence",
       "phase": "T11",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 11019,
       "time_sec": 8.2,
       "scores": {
@@ -227,8 +201,6 @@
       "task_name": "T11_B_pattern_pipeline",
       "phase": "T11",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 11998,
       "time_sec": 21.19,
       "scores": {
@@ -244,8 +216,6 @@
       "task_name": "T11_C_resume_from_stage",
       "phase": "T11",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 10755,
       "time_sec": 3.17,
       "scores": {
@@ -261,8 +231,6 @@
       "task_name": "T11_D_news_digest_handoff",
       "phase": "T11",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 11108,
       "time_sec": 12.89,
       "scores": {
@@ -278,8 +246,6 @@
       "task_name": "T12_A_shrinker_proposal_mode",
       "phase": "T12",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 11550,
       "time_sec": 17.44,
       "scores": {
@@ -295,8 +261,6 @@
       "task_name": "T12_B_patterns_patch_flag",
       "phase": "T12",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 11183,
       "time_sec": 8.84,
       "scores": {
@@ -312,8 +276,6 @@
       "task_name": "T12_C_readme_multilang",
       "phase": "T12",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 10947,
       "time_sec": 5.97,
       "scores": {
@@ -329,8 +291,6 @@
       "task_name": "T12_D_no_meta_tool_for_generic",
       "phase": "T12",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 11471,
       "time_sec": 14.08,
       "scores": {
@@ -346,8 +306,6 @@
       "task_name": "T12_E_permission_boundary_proposals",
       "phase": "T12",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 11703,
       "time_sec": 17.13,
       "scores": {
@@ -363,8 +321,6 @@
       "task_name": "T13_A_stage1_findings",
       "phase": "T13",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": 10,
       "tokens_total": 149793,
       "time_sec": 572.96,
       "scores": {
@@ -380,8 +336,6 @@
       "task_name": "T13_A_stage2_challenger",
       "phase": "T13",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": 8.4583,
       "tokens_total": 91661,
       "time_sec": 211.44,
       "scores": {
@@ -397,8 +351,6 @@
       "task_name": "T13_B_stage1_findings",
       "phase": "T13",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": 10,
       "tokens_total": 3058,
       "time_sec": 69.29,
       "scores": {
@@ -414,8 +366,6 @@
       "task_name": "T13_B_stage2_challenger",
       "phase": "T13",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": 9.9049,
       "tokens_total": 84465,
       "time_sec": 438.1,
       "scores": {
@@ -431,8 +381,6 @@
       "task_name": "T13_C_interface_drift",
       "phase": "T13",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 2922,
       "time_sec": 56.59,
       "scores": {
@@ -448,8 +396,6 @@
       "task_name": "T13_D_frontmatter_trap",
       "phase": "T13",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 29306,
       "time_sec": 100.09,
       "scores": {
@@ -465,8 +411,6 @@
       "task_name": "T13_E_challenger_dispute",
       "phase": "T13",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 84083,
       "time_sec": 205.7,
       "scores": {
@@ -482,8 +426,6 @@
       "task_name": "T13_PREREQ_looper_t5b_t5e",
       "phase": "T13",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": 10,
       "tokens_total": 195991,
       "time_sec": 444.85,
       "scores": {
@@ -499,8 +441,6 @@
       "task_name": "T13_PREREQ_stage2_direct_t5c_t5d",
       "phase": "T13",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 93446,
       "time_sec": 207.38,
       "scores": {
@@ -516,8 +456,6 @@
       "task_name": "T14_A_manifest_vs_memory",
       "phase": "T14",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 39297,
       "time_sec": 33.18,
       "scores": {
@@ -533,8 +471,6 @@
       "task_name": "T14_B_cross_skill_filename_drift",
       "phase": "T14",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 12314,
       "time_sec": 15.6,
       "scores": {
@@ -550,8 +486,6 @@
       "task_name": "T14_C_checkpoint_granularity",
       "phase": "T14",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 12244,
       "time_sec": 15.34,
       "scores": {
@@ -567,8 +501,6 @@
       "task_name": "T14_D_relative_path_fragility",
       "phase": "T14",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 12492,
       "time_sec": 15.93,
       "scores": {
@@ -584,8 +516,6 @@
       "task_name": "T14_E_scope_creep_detection",
       "phase": "T14",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 12699,
       "time_sec": 19.48,
       "scores": {
@@ -601,8 +531,6 @@
       "task_name": "T14_F_sanity_check_result_persistence",
       "phase": "T14",
       "result": "fail",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 12291,
       "time_sec": 19.99,
       "scores": {
@@ -618,8 +546,6 @@
       "task_name": "T14_G_false_positive_spec_conflict",
       "phase": "T14",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 12679,
       "time_sec": 19.47,
       "scores": {
@@ -635,8 +561,6 @@
       "task_name": "T14_H1_token_source_undefined",
       "phase": "T14",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 12077,
       "time_sec": 16.03,
       "scores": {
@@ -652,8 +576,6 @@
       "task_name": "T14_H2_container_name_mismatch",
       "phase": "T14",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 12430,
       "time_sec": 27.78,
       "scores": {
@@ -669,8 +591,6 @@
       "task_name": "T14_H3_param_contract_incomplete",
       "phase": "T14",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 12174,
       "time_sec": 21.81,
       "scores": {
@@ -686,8 +606,6 @@
       "task_name": "T14_H4_output_protocol_field_missing",
       "phase": "T14",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 12041,
       "time_sec": 13.5,
       "scores": {
@@ -703,8 +621,6 @@
       "task_name": "T14_H5_progress_literal_placeholder",
       "phase": "T14",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 12298,
       "time_sec": 15.71,
       "scores": {
@@ -720,8 +636,6 @@
       "task_name": "T14_H6_container_path_translation",
       "phase": "T14",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 12314,
       "time_sec": 16.66,
       "scores": {
@@ -737,8 +651,6 @@
       "task_name": "T14_H7_api_route_prefix_mismatch",
       "phase": "T14",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 12553,
       "time_sec": 18.7,
       "scores": {
@@ -754,8 +666,6 @@
       "task_name": "T14_H8_token_expiry_batch_prefetch",
       "phase": "T14",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 12095,
       "time_sec": 15.74,
       "scores": {
@@ -771,8 +681,6 @@
       "task_name": "T14_H9_phase_signal_no_integrity_gate",
       "phase": "T14",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 12537,
       "time_sec": 24.44,
       "scores": {
@@ -788,8 +696,6 @@
       "task_name": "T15_P1_route_trigger_ambiguity",
       "phase": "T15",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 38814,
       "time_sec": 16.04,
       "scores": {
@@ -805,8 +711,6 @@
       "task_name": "T15_P2_cross_session_mode_recovery",
       "phase": "T15",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 13001,
       "time_sec": 24.93,
       "scores": {
@@ -822,8 +726,6 @@
       "task_name": "T15_P3_first_run_no_notification",
       "phase": "T15",
       "result": "fail",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 12010,
       "time_sec": 11.23,
       "scores": {
@@ -839,8 +741,6 @@
       "task_name": "T15_P4_write_only_state_file",
       "phase": "T15",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 12217,
       "time_sec": 12.57,
       "scores": {
@@ -856,8 +756,6 @@
       "task_name": "T15_P5_state_format_undefined",
       "phase": "T15",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 12441,
       "time_sec": 20.97,
       "scores": {
@@ -873,8 +771,6 @@
       "task_name": "T15_P6_subskill_failure_no_fallback",
       "phase": "T15",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 12038,
       "time_sec": 11.31,
       "scores": {
@@ -890,8 +786,6 @@
       "task_name": "T15_P7_overstepping_domain_experts",
       "phase": "T15",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 12089,
       "time_sec": 13.6,
       "scores": {
@@ -907,8 +801,6 @@
       "task_name": "T15_P8_ops_status_not_checked_on_recovery",
       "phase": "T15",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 12353,
       "time_sec": 14.9,
       "scores": {
@@ -924,8 +816,6 @@
       "task_name": "T16_D1_dod_command_coverage_mismatch",
       "phase": "T16",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 38488,
       "time_sec": 15.11,
       "scores": {
@@ -941,8 +831,6 @@
       "task_name": "T16_D2_hook_file_timing_before_spawn",
       "phase": "T16",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 12612,
       "time_sec": 20.74,
       "scores": {
@@ -958,8 +846,6 @@
       "task_name": "T16_D3_sigterm_handler_no_failsafe",
       "phase": "T16",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 12236,
       "time_sec": 19.77,
       "scores": {
@@ -975,8 +861,6 @@
       "task_name": "T16_D4_review_report_no_signature",
       "phase": "T16",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 12047,
       "time_sec": 15.01,
       "scores": {
@@ -992,8 +876,6 @@
       "task_name": "T16_D5_ut_blocked_silent_passthrough",
       "phase": "T16",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 12403,
       "time_sec": 16.1,
       "scores": {
@@ -1009,8 +891,6 @@
       "task_name": "T16_D6_phase_skip_intermediate_gate",
       "phase": "T16",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 11948,
       "time_sec": 12.48,
       "scores": {
@@ -1026,8 +906,6 @@
       "task_name": "T16_D7_manifest_no_required_field_validation",
       "phase": "T16",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 11812,
       "time_sec": 9.11,
       "scores": {
@@ -1043,8 +921,6 @@
       "task_name": "T16_D8_parallel_agent_no_timeout_handling",
       "phase": "T16",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 12984,
       "time_sec": 34.32,
       "scores": {
@@ -1060,8 +936,6 @@
       "task_name": "T16_D9_fix_route_no_explicit_table_ref",
       "phase": "T16",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 12579,
       "time_sec": 19.67,
       "scores": {
@@ -1077,8 +951,6 @@
       "task_name": "T17_U10_chained_command_opaque_failure",
       "phase": "T17",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 11819,
       "time_sec": 8.46,
       "scores": {
@@ -1094,8 +966,6 @@
       "task_name": "T17_U11_restart_no_connection_check",
       "phase": "T17",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 11816,
       "time_sec": 10.05,
       "scores": {
@@ -1111,8 +981,6 @@
       "task_name": "T17_U12_return_template_missing_error_branch",
       "phase": "T17",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 11891,
       "time_sec": 14.78,
       "scores": {
@@ -1128,8 +996,6 @@
       "task_name": "T17_U13_multi_write_no_progress_output",
       "phase": "T17",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 11918,
       "time_sec": 12.82,
       "scores": {
@@ -1145,8 +1011,6 @@
       "task_name": "T17_U3_undefined_param_origin",
       "phase": "T17",
       "result": "fail",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 0,
       "time_sec": 60.02,
       "scores": {
@@ -1162,8 +1026,6 @@
       "task_name": "T17_U4_orchestrator_missing_agent_tool",
       "phase": "T17",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 38430,
       "time_sec": 57.51,
       "scores": {
@@ -1179,8 +1041,6 @@
       "task_name": "T17_U5_retry_loop_no_termination",
       "phase": "T17",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 11884,
       "time_sec": 13.59,
       "scores": {
@@ -1196,8 +1056,6 @@
       "task_name": "T17_U6_bash_check_silent_skip",
       "phase": "T17",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 12082,
       "time_sec": 14.18,
       "scores": {
@@ -1213,8 +1071,6 @@
       "task_name": "T17_U7_output_protocol_no_termination_guarantee",
       "phase": "T17",
       "result": "fail",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 12255,
       "time_sec": 27.83,
       "scores": {
@@ -1230,8 +1086,6 @@
       "task_name": "T17_U9_service_status_blacklist_match",
       "phase": "T17",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 11764,
       "time_sec": 8.01,
       "scores": {
@@ -1247,8 +1101,6 @@
       "task_name": "T1_A_cross_doc_contradiction",
       "phase": "T1",
       "result": "pass",
-      "capability_score": 2.5,
-      "ces_score": 10.0,
       "tokens_total": 11519,
       "time_sec": 12.63,
       "scores": {
@@ -1264,8 +1116,6 @@
       "task_name": "T1_B_dependency_accuracy",
       "phase": "T1",
       "result": "pass",
-      "capability_score": 5.0,
-      "ces_score": 10.0,
       "tokens_total": 11514,
       "time_sec": 11.81,
       "scores": {
@@ -1281,8 +1131,6 @@
       "task_name": "T1_C_architecture_consistency",
       "phase": "T1",
       "result": "pass",
-      "capability_score": 5.0,
-      "ces_score": 9.2802,
       "tokens_total": 12286,
       "time_sec": 27.62,
       "scores": {
@@ -1298,8 +1146,6 @@
       "task_name": "T1_D_lifecycle_completeness",
       "phase": "T1",
       "result": "pass",
-      "capability_score": 3.5,
-      "ces_score": 9.4825,
       "tokens_total": 12679,
       "time_sec": 35.32,
       "scores": {
@@ -1315,8 +1161,6 @@
       "task_name": "T1_E_design_flaw_probe",
       "phase": "T1",
       "result": "pass",
-      "capability_score": 5.0,
-      "ces_score": 10.0,
       "tokens_total": 11931,
       "time_sec": 24.96,
       "scores": {
@@ -1332,8 +1176,6 @@
       "task_name": "T2_A_snake_case_pattern",
       "phase": "T2",
       "result": "pass",
-      "capability_score": 5.5,
-      "ces_score": 7.1306,
       "tokens_total": 12797,
       "time_sec": 28.34,
       "scores": {
@@ -1349,8 +1191,6 @@
       "task_name": "T2_B_class_extension",
       "phase": "T2",
       "result": "pass",
-      "capability_score": 4.0,
-      "ces_score": 7.1457,
       "tokens_total": 13580,
       "time_sec": 24.66,
       "scores": {
@@ -1366,8 +1206,6 @@
       "task_name": "T2_C_error_handling_pattern",
       "phase": "T2",
       "result": "pass",
-      "capability_score": 5.5,
-      "ces_score": 8.082,
       "tokens_total": 13780,
       "time_sec": 22.45,
       "scores": {
@@ -1383,8 +1221,6 @@
       "task_name": "T2_D_return_contract",
       "phase": "T2",
       "result": "pass",
-      "capability_score": 4.0,
-      "ces_score": 9.9816,
       "tokens_total": 11375,
       "time_sec": 9.85,
       "scores": {
@@ -1400,8 +1236,6 @@
       "task_name": "T2_E_docstring_interface_consistency",
       "phase": "T2",
       "result": "fail",
-      "capability_score": 2.75,
-      "ces_score": 10.0,
       "tokens_total": 13268,
       "time_sec": 12.9,
       "scores": {
@@ -1417,8 +1251,6 @@
       "task_name": "T3_A_compact_summary_quality",
       "phase": "T3",
       "result": "fail",
-      "capability_score": 0.8333,
-      "ces_score": 0.0,
       "tokens_total": 0,
       "time_sec": 90.03,
       "scores": {
@@ -1434,8 +1266,6 @@
       "task_name": "T3_B_compact_resume_ability",
       "phase": "T3",
       "result": "pass",
-      "capability_score": 4.1667,
-      "ces_score": 7.6215,
       "tokens_total": 13154,
       "time_sec": 32.51,
       "scores": {
@@ -1451,8 +1281,6 @@
       "task_name": "T3_C_claude_md_compliance",
       "phase": "T3",
       "result": "pass",
-      "capability_score": 2.5,
-      "ces_score": 10.0,
       "tokens_total": 14686,
       "time_sec": 42.93,
       "scores": {
@@ -1468,8 +1296,6 @@
       "task_name": "T3_D_memory_vs_context",
       "phase": "T3",
       "result": "pass",
-      "capability_score": 2.5,
-      "ces_score": 7.1434,
       "tokens_total": 16587,
       "time_sec": 27.95,
       "scores": {
@@ -1485,8 +1311,6 @@
       "task_name": "T3_E_long_context_recall",
       "phase": "T3",
       "result": "pass",
-      "capability_score": 1.0,
-      "ces_score": 10.0,
       "tokens_total": 11456,
       "time_sec": 8.53,
       "scores": {
@@ -1502,8 +1326,6 @@
       "task_name": "T4_A_skill_instruction_execution",
       "phase": "T4",
       "result": "pass",
-      "capability_score": 4.0,
-      "ces_score": 9.1113,
       "tokens_total": 11095,
       "time_sec": 18.04,
       "scores": {
@@ -1519,8 +1341,6 @@
       "task_name": "T4_B_pipeline_step_consumption",
       "phase": "T4",
       "result": "pass",
-      "capability_score": 2.9167,
-      "ces_score": 10.0,
       "tokens_total": 11189,
       "time_sec": 8.54,
       "scores": {
@@ -1536,8 +1356,6 @@
       "task_name": "T4_C_agent_plan_execute_report",
       "phase": "T4",
       "result": "pass",
-      "capability_score": 4.5,
-      "ces_score": 10.0,
       "tokens_total": 12198,
       "time_sec": 25.8,
       "scores": {
@@ -1553,8 +1371,6 @@
       "task_name": "T4_D_strict_schema_output",
       "phase": "T4",
       "result": "pass",
-      "capability_score": 3.3333,
-      "ces_score": 9.9753,
       "tokens_total": 11294,
       "time_sec": 12.32,
       "scores": {
@@ -1570,8 +1386,6 @@
       "task_name": "T4_E_conditional_workflow_fail_path",
       "phase": "T4",
       "result": "pass",
-      "capability_score": 4.0,
-      "ces_score": 9.2441,
       "tokens_total": 11463,
       "time_sec": 15.75,
       "scores": {
@@ -1587,8 +1401,6 @@
       "task_name": "T4_F_ambiguous_clarify",
       "phase": "T4",
       "result": "fail",
-      "capability_score": 2.0,
-      "ces_score": null,
       "tokens_total": 15728,
       "time_sec": 59.95,
       "scores": {
@@ -1604,8 +1416,6 @@
       "task_name": "T5_A_fs_multiop",
       "phase": "T5",
       "result": "pass",
-      "capability_score": 6.0,
-      "ces_score": 9.8324,
       "tokens_total": 12542,
       "time_sec": 30.66,
       "scores": {
@@ -1621,8 +1431,6 @@
       "task_name": "T5_B_text_processing",
       "phase": "T5",
       "result": "pass",
-      "capability_score": 6.0,
-      "ces_score": 8.8495,
       "tokens_total": 14479,
       "time_sec": 43.24,
       "scores": {
@@ -1638,8 +1446,6 @@
       "task_name": "T5_C_script_write_execute",
       "phase": "T5",
       "result": "fail",
-      "capability_score": 3.0,
-      "ces_score": 9.4077,
       "tokens_total": 14123,
       "time_sec": 42.67,
       "scores": {
@@ -1655,8 +1461,6 @@
       "task_name": "T5_D_git_workflow",
       "phase": "T5",
       "result": "pass",
-      "capability_score": 5.5,
-      "ces_score": 10.0,
       "tokens_total": 12406,
       "time_sec": 19.06,
       "scores": {
@@ -1672,8 +1476,6 @@
       "task_name": "T5_E_error_recovery",
       "phase": "T5",
       "result": "pass",
-      "capability_score": 6.0,
-      "ces_score": null,
       "tokens_total": 11906,
       "time_sec": 25.0,
       "scores": {
@@ -1689,8 +1491,6 @@
       "task_name": "T5_F_python_data_processing",
       "phase": "T5",
       "result": "fail",
-      "capability_score": 3.0,
-      "ces_score": null,
       "tokens_total": 39631,
       "time_sec": 32.88,
       "scores": {
@@ -1706,8 +1506,6 @@
       "task_name": "T5_G_runtime_error_defense",
       "phase": "T5",
       "result": "pass",
-      "capability_score": 5.0,
-      "ces_score": null,
       "tokens_total": 13816,
       "time_sec": 39.23,
       "scores": {
@@ -1723,8 +1521,6 @@
       "task_name": "T6_A_news_analysis",
       "phase": "T6",
       "result": "pass",
-      "capability_score": 5.5,
-      "ces_score": 9.5198,
       "tokens_total": 13390,
       "time_sec": 43.85,
       "scores": {
@@ -1740,8 +1536,6 @@
       "task_name": "T6_B_code_review",
       "phase": "T6",
       "result": "pass",
-      "capability_score": 5.5,
-      "ces_score": 9.5655,
       "tokens_total": 13369,
       "time_sec": 48.86,
       "scores": {
@@ -1757,8 +1551,6 @@
       "task_name": "T6_C_multi_doc_synthesis",
       "phase": "T6",
       "result": "pass",
-      "capability_score": 4.5833,
-      "ces_score": 10.0,
       "tokens_total": 12797,
       "time_sec": 36.21,
       "scores": {
@@ -1774,8 +1566,6 @@
       "task_name": "T6_D_data_insights",
       "phase": "T6",
       "result": "pass",
-      "capability_score": 5.5,
-      "ces_score": 9.4525,
       "tokens_total": 20323,
       "time_sec": 83.48,
       "scores": {
@@ -1791,8 +1581,6 @@
       "task_name": "T7_A_skill_review_self",
       "phase": "T7",
       "result": "pass",
-      "capability_score": 7.5,
-      "ces_score": null,
       "tokens_total": 62809,
       "time_sec": 434.74,
       "scores": {
@@ -1808,8 +1596,6 @@
       "task_name": "T7_B_skill_review_other",
       "phase": "T7",
       "result": "pass",
-      "capability_score": 7.5,
-      "ces_score": null,
       "tokens_total": 50373,
       "time_sec": 481.75,
       "scores": {
@@ -1825,8 +1611,6 @@
       "task_name": "T7_C_skill_test_self",
       "phase": "T7",
       "result": "pass",
-      "capability_score": 7.0,
-      "ces_score": null,
       "tokens_total": 112433,
       "time_sec": 592.74,
       "scores": {
@@ -1842,8 +1626,6 @@
       "task_name": "T7_D_skill_test_other",
       "phase": "T7",
       "result": "pass",
-      "capability_score": 6.25,
-      "ces_score": null,
       "tokens_total": 11153,
       "time_sec": 12.87,
       "scores": {
@@ -1859,8 +1641,6 @@
       "task_name": "T7_E_gh_clone_pipeline",
       "phase": "T7",
       "result": "pass",
-      "capability_score": 7.0,
-      "ces_score": null,
       "tokens_total": 81653,
       "time_sec": 419.63,
       "scores": {
@@ -1876,8 +1656,6 @@
       "task_name": "T7_F_cross_skill_orchestration",
       "phase": "T7",
       "result": "pass",
-      "capability_score": 7.0833,
-      "ces_score": null,
       "tokens_total": 45076,
       "time_sec": 125.68,
       "scores": {
@@ -1893,8 +1671,6 @@
       "task_name": "T8_A_backlog_prioritize",
       "phase": "T8",
       "result": "pass",
-      "capability_score": 5.5,
-      "ces_score": 9.4526,
       "tokens_total": 13556,
       "time_sec": 39.65,
       "scores": {
@@ -1910,8 +1686,6 @@
       "task_name": "T8_B_sprint_plan",
       "phase": "T8",
       "result": "pass",
-      "capability_score": 5.5,
-      "ces_score": 10.0,
       "tokens_total": 18034,
       "time_sec": 87.24,
       "scores": {
@@ -1927,8 +1701,6 @@
       "task_name": "T8_C_autonomous_routing",
       "phase": "T8",
       "result": "pass",
-      "capability_score": 6.0,
-      "ces_score": 10.0,
       "tokens_total": 16421,
       "time_sec": 60.81,
       "scores": {
@@ -1944,8 +1716,6 @@
       "task_name": "T8_D_retro_audit",
       "phase": "T8",
       "result": "pass",
-      "capability_score": 5.5,
-      "ces_score": 9.9495,
       "tokens_total": 12204,
       "time_sec": 22.75,
       "scores": {
@@ -1961,8 +1731,6 @@
       "task_name": "T8_E_toolchain_proposal",
       "phase": "T8",
       "result": "pass",
-      "capability_score": 4.0,
-      "ces_score": 10.0,
       "tokens_total": 12144,
       "time_sec": 24.8,
       "scores": {
@@ -1978,8 +1746,6 @@
       "task_name": "T9_A_dispatch_review_vs_test",
       "phase": "T9",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 11039,
       "time_sec": 8.74,
       "scores": {
@@ -1995,8 +1761,6 @@
       "task_name": "T9_B_dispatch_full_pipeline",
       "phase": "T9",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 11048,
       "time_sec": 7.97,
       "scores": {
@@ -2012,8 +1776,6 @@
       "task_name": "T9_C_dispatch_shrinker",
       "phase": "T9",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 11273,
       "time_sec": 9.89,
       "scores": {
@@ -2029,8 +1791,6 @@
       "task_name": "T9_D_dispatch_packer_sync",
       "phase": "T9",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 11029,
       "time_sec": 5.94,
       "scores": {
@@ -2046,8 +1806,6 @@
       "task_name": "T9_E_dispatch_review_vs_pattern_review",
       "phase": "T9",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 10779,
       "time_sec": 3.51,
       "scores": {
@@ -2063,8 +1821,6 @@
       "task_name": "T9_F_dispatch_clarify_ambiguous",
       "phase": "T9",
       "result": "pass",
-      "capability_score": 0.0,
-      "ces_score": null,
       "tokens_total": 10739,
       "time_sec": 4.46,
       "scores": {

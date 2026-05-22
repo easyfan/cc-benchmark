@@ -1,222 +1,150 @@
 {
-  "generated_at": "2026-05-22T03:21:03Z",
+  "generated_at": "2026-05-22T04:58:30Z",
   "baseline_model": "claude-sonnet-4.6",
   "entries": [
     {
-      "model_id": "claude-sonnet-4.6",
-      "weighted_score": 6.3838,
-      "capability_score": 4.9204,
-      "ces_score": 9.7983,
-      "pass_rate": 0.9672,
-      "total_tokens": 4330486,
-      "phase_scores": {
-        "T0": 3.1667,
-        "T1": 3.9167,
-        "T2": 4.9,
-        "T3": 2.7,
-        "T4": 3.875,
-        "T5": 5.7857,
-        "T6": 5.2708,
-        "T7": 6.5833,
-        "T8": 5.3
+      "model_id": "glm-5.1-1m",
+      "capability_score": 8.53,
+      "pass_rate": 0.918,
+      "pass_count": 112,
+      "total_count": 122,
+      "total_tokens": 860141,
+      "total_time": 11252.3,
+      "dimension_scores": {
+        "TC": 9.33,
+        "CP": 8.99,
+        "FI": 8.87,
+        "ER": 10.0,
+        "QU": 9.35,
+        "CT": 9.44
       },
+      "weighted_score": 7.78
+    },
+    {
+      "model_id": "claude-sonnet-4.6",
+      "capability_score": 9.27,
+      "pass_rate": 0.9672,
+      "pass_count": 118,
+      "total_count": 122,
+      "total_tokens": 4330486,
+      "total_time": 6687.6,
       "dimension_scores": {
         "TC": 9.5,
-        "ER": 9.6296,
-        "FI": 9.7475,
-        "CP": 9.6491,
-        "CT": 9.4444,
-        "QU": 9.4444
-      }
+        "CP": 9.65,
+        "FI": 9.75,
+        "ER": 9.63,
+        "QU": 9.44,
+        "CT": 9.44
+      },
+      "weighted_score": 7.02
     },
     {
       "model_id": "mimo-v2.5-pro-1m",
-      "weighted_score": 6.1583,
-      "capability_score": 4.5313,
-      "ces_score": 9.9546,
+      "capability_score": 7.96,
       "pass_rate": 0.8934,
+      "pass_count": 109,
+      "total_count": 122,
       "total_tokens": 1028167,
-      "phase_scores": {
-        "T0": 3.25,
-        "T1": 4.0333,
-        "T2": 3.55,
-        "T3": 2.5333,
-        "T4": 4.0,
-        "T5": 5.3571,
-        "T6": 5.2708,
-        "T7": 5.1389,
-        "T8": 5.3
-      },
+      "total_time": 11450.5,
       "dimension_scores": {
-        "TC": 8.8333,
-        "ER": 9.2593,
-        "FI": 8.9899,
-        "CP": 8.8596,
-        "CT": 9.0,
-        "QU": 8.6111
-      }
+        "TC": 8.83,
+        "CP": 8.86,
+        "FI": 9.02,
+        "ER": 9.26,
+        "QU": 8.61,
+        "CT": 9.0
+      },
+      "weighted_score": 7.01
     },
     {
       "model_id": "qwen3.6-plus[1m]",
-      "weighted_score": 6.1226,
-      "capability_score": 4.8122,
-      "ces_score": 9.1801,
+      "capability_score": 8.62,
       "pass_rate": 0.9262,
+      "pass_count": 113,
+      "total_count": 122,
       "total_tokens": 2578230,
-      "phase_scores": {
-        "T0": 3.25,
-        "T1": 4.2,
-        "T2": 4.35,
-        "T3": 2.2,
-        "T4": 3.4583,
-        "T5": 4.9286,
-        "T6": 5.2708,
-        "T7": 7.0556,
-        "T8": 5.3
-      },
+      "total_time": 6742.0,
       "dimension_scores": {
-        "TC": 9.3333,
-        "ER": 9.8148,
-        "FI": 9.0909,
-        "CP": 9.2105,
-        "CT": 9.2222,
-        "QU": 9.1667
-      }
-    },
-    {
-      "model_id": "glm-5.1-1m",
-      "weighted_score": 5.8689,
-      "capability_score": 4.649,
-      "ces_score": 8.7155,
-      "pass_rate": 0.918,
-      "total_tokens": 860141,
-      "phase_scores": {
-        "T0": 3.2857,
-        "T1": 4.2,
-        "T2": 3.9667,
-        "T3": 2.5333,
-        "T4": 3.5556,
-        "T5": 5.7857,
-        "T6": 5.5,
-        "T7": 5.8889,
-        "T8": 4.75
+        "TC": 9.33,
+        "CP": 9.21,
+        "FI": 9.12,
+        "ER": 9.81,
+        "QU": 9.17,
+        "CT": 9.22
       },
-      "dimension_scores": {
-        "TC": 9.3333,
-        "ER": 10.0,
-        "FI": 8.8384,
-        "CP": 8.9912,
-        "CT": 9.4444,
-        "QU": 9.3519
-      }
+      "weighted_score": 6.88
     },
     {
       "model_id": "mimo-v2.5-1m",
-      "weighted_score": 5.8361,
-      "capability_score": 4.187,
-      "ces_score": 9.6841,
+      "capability_score": 7.34,
       "pass_rate": 0.8443,
+      "pass_count": 103,
+      "total_count": 122,
       "total_tokens": 917695,
-      "phase_scores": {
-        "T0": 3.2857,
-        "T1": 4.0833,
-        "T2": 3.0,
-        "T3": 2.5333,
-        "T4": 4.0,
-        "T5": 5.6667,
-        "T6": 5.2708,
-        "T7": 5.1806,
-        "T8": 3.6333
-      },
+      "total_time": 14582.9,
       "dimension_scores": {
-        "TC": 8.9167,
-        "ER": 9.8148,
-        "FI": 8.3333,
-        "CP": 8.4649,
-        "CT": 9.0,
-        "QU": 7.7778
-      }
+        "TC": 8.92,
+        "CP": 8.46,
+        "FI": 8.38,
+        "ER": 9.81,
+        "QU": 7.78,
+        "CT": 9.0
+      },
+      "weighted_score": 6.57
     },
     {
       "model_id": "MiniMax-M2.7",
-      "weighted_score": 5.7244,
-      "capability_score": 4.5539,
-      "ces_score": 8.4557,
+      "capability_score": 7.27,
       "pass_rate": 0.8443,
+      "pass_count": 103,
+      "total_count": 122,
       "total_tokens": 4429351,
-      "phase_scores": {
-        "T0": 3.2857,
-        "T1": 3.0667,
-        "T2": 4.35,
-        "T3": 2.6167,
-        "T4": 3.5556,
-        "T5": 3.881,
-        "T6": 5.5,
-        "T7": 6.2361,
-        "T8": 5.3
-      },
+      "total_time": 7996.8,
       "dimension_scores": {
-        "TC": 8.3333,
-        "ER": 8.5185,
-        "FI": 8.9899,
-        "CP": 8.6404,
-        "CT": 8.7778,
-        "QU": 8.5185
-      }
-    },
-    {
-      "model_id": "deepseek-v4-pro-1m",
-      "weighted_score": 5.1617,
-      "capability_score": 4.1767,
-      "ces_score": 7.4602,
-      "pass_rate": 0.7869,
-      "total_tokens": 4140315,
-      "phase_scores": {
-        "T0": 3.25,
-        "T1": 3.0667,
-        "T2": 2.8167,
-        "T3": 2.5333,
-        "T4": 3.1667,
-        "T5": 5.7857,
-        "T6": 4.3542,
-        "T7": 6.8611,
-        "T8": 3.7667
+        "TC": 8.33,
+        "CP": 8.64,
+        "FI": 9.02,
+        "ER": 8.52,
+        "QU": 8.52,
+        "CT": 8.78
       },
-      "dimension_scores": {
-        "TC": 9.0833,
-        "ER": 9.6296,
-        "FI": 8.3838,
-        "CP": 8.0263,
-        "CT": 8.7778,
-        "QU": 7.963
-      }
+      "weighted_score": 5.46
     },
     {
       "model_id": "kimi-for-coding-1m",
-      "weighted_score": 4.5829,
-      "capability_score": 3.3824,
-      "ces_score": 7.3842,
+      "capability_score": 4.89,
       "pass_rate": 0.6475,
+      "pass_count": 79,
+      "total_count": 122,
       "total_tokens": 707469,
-      "phase_scores": {
-        "T0": 3.2857,
-        "T1": 3.3667,
-        "T2": 4.35,
-        "T3": 2.6,
-        "T4": 3.2361,
-        "T5": 5.7857,
-        "T6": 4.3542,
-        "T7": 2.9306,
-        "T8": 1.7666
-      },
+      "total_time": 10152.1,
       "dimension_scores": {
-        "TC": 7.8333,
-        "ER": 8.7037,
-        "FI": 7.6768,
-        "CP": 7.2807,
-        "CT": 7.8889,
-        "QU": 6.0185
-      }
+        "TC": 7.83,
+        "CP": 7.28,
+        "FI": 7.75,
+        "ER": 8.7,
+        "QU": 6.02,
+        "CT": 7.89
+      },
+      "weighted_score": 5.27
+    },
+    {
+      "model_id": "deepseek-v4-pro-1m",
+      "capability_score": 6.77,
+      "pass_rate": 0.7869,
+      "pass_count": 96,
+      "total_count": 122,
+      "total_tokens": 4140315,
+      "total_time": 11682.2,
+      "dimension_scores": {
+        "TC": 9.08,
+        "CP": 8.03,
+        "FI": 8.43,
+        "ER": 9.63,
+        "QU": 7.96,
+        "CT": 8.78
+      },
+      "weighted_score": 4.8
     }
   ]
 }
